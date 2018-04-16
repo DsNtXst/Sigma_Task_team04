@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "ViewLessonEdit";
+}
+<p>Редактирование урока @ViewBag.OneLesson.Name</p>
+@using (Html.BeginForm("Update", "Lesson", FormMethod.Post))
+{
+    <input type="hidden" name="Id" value="@ViewBag.OneLesson.Id" />
+    <input type="text" name="Name" value="@ViewBag.OneLesson.Name" />
+    <input type="text" name="Information" value="@ViewBag.OneLesson.Information" />
+    <input type="submit" value="Сохранить изменения" />
+
+}
+
+

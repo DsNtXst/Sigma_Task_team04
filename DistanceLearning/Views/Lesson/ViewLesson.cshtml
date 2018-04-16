@@ -1,0 +1,46 @@
+﻿@{
+    Layout = null;
+}
+<table>
+    <tr>
+        <td><p>%ИМЯ_КУРСА%</p></td>
+        <td></td>
+    </tr>
+    @foreach (var b in ViewBag.Lessons)
+     {
+        <tr>
+            <td><p>@b.Id</p></td>
+            <td><p>@b.Name</p></td>
+            <!--зона удаления-->
+            <td>
+                @using (Html.BeginForm("Delete", "Lesson", FormMethod.Post))
+                {
+                    <input type="hidden" name="id_lesson" value="@b.Id" />
+                    <input type="submit" value="удалить" />
+                }
+                
+            </td>
+
+            <!--зона перехода на подробнее-->
+            <td>
+                <a href="/Lesson/ViewLessonAbout?id_lesson=@b.Id">
+                    Подробнее
+                </a>
+            </td>
+            <!--Старая зона перехода на подробнее
+            <td>
+                _using (Html.BeginForm("ViewLessonAbout", "Lesson", FormMethod.Post))
+                {
+                    <input type="hidden" name="id_lesson" value="_b.Id" />
+                    <input type="submit" value="Подробнее" />
+                }
+
+            </td>
+            -->
+            
+</tr>
+    }
+</table>
+
+<a href="/Lesson/ViewLessonAdd">%Добавить урок%</a>
+                

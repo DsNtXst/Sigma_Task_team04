@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "ViewLessonAdd";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/TextBox.css">
+    <br />
+    <p>Добавление урока в курс №@ViewBag.Name</p>
+    <a href="/Courses/Course/@ViewBag.Id_course">
+        Назад к курсу
+    </a>
+    @using (Html.BeginForm("Add", "Lesson", FormMethod.Post))
+    {
+        <input type="hidden" name="CourseId" value="@ViewBag.Id_course" />
+        <p>
+            Введите имя урока<br />
+            <input class="input-style" type="text" name="Name" /><br />
+        </p>
+        <!--<input type="text" name="Information" />-->
+        <p>
+            Введите информацию<br />
+            <textarea class="input-style" name="Information"></textarea><br />
+        </p>
+        <input class="input-style" type="submit" value="Добавить" />
+
+
+    }
+    <!--test-->
+        <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
+        <script type="text/javascript">
+            bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+        </script>
+</body>
+</html>

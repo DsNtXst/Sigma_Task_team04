@@ -1,0 +1,48 @@
+﻿@using DistanceLearning.Models;
+@{
+    ViewBag.Title = "О тесте";
+}
+@Model
+<h2>ViewTestAbout</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/TextBox.css">
+    <br />
+    <p><b>@ViewBag.OneTest.Name</b></p>
+    <a href="/Courses/Course/@ViewBag.OneTest.CourseId">
+        Назад к курсу
+    </a>
+    <!--TEST-->
+    <p> <h7>Время</h7></p>
+    <!--<p>@ViewBag.OneTest.Time</p>-->
+    <p>@Html.Raw(ViewBag.OneTest.Time)</p>
+    <p><h7>Кол-во тестов</h7></p>
+    <!--<p>@ViewBag.OneTest.CountQuestions</p>-->
+    <p>@Html.Raw(ViewBag.OneTest.CountQuestions)</p>
+    <p>Вопросы :</p>
+
+    @if (ViewBag.OneTest.Questions != null)
+    {
+        <ul>
+            @foreach (var q in ViewBag.OneTest.Questions)
+            {
+                <li>@q.Task (@q.Task)</li>
+            }
+        </ul>
+    }
+
+    <!--Переход на редактирование-->
+    @using (Html.BeginForm("ViewTestEdit", "Test", FormMethod.Post))
+    {
+        <input type="hidden" name="id_test" value="@ViewBag.OneTest.Id" />
+        <input class="input-style" type="submit" value="Редактировать" />
+
+    }
+</body>
+</html>
+

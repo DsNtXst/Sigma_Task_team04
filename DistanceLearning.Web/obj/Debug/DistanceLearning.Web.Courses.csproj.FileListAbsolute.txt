@@ -1,0 +1,476 @@
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ApplicationInsights.config
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\DistanceLearning.Web.dll.config
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\DistanceLearning.Web.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\DistanceLearning.Web.pdb
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Antlr3.Runtime.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\DistanceLearning.Mail.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\EntityFramework.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AI.Web.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.ApplicationInsights.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Newtonsoft.Json.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Owin.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.Helpers.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.Mvc.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.Optimization.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.Razor.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.WebPages.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\WebGrease.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\DistanceLearning.Mail.pdb
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.Helpers.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.Mvc.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.Optimization.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.Razor.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.WebPages.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Antlr3.Runtime.pdb
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Newtonsoft.Json.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\EntityFramework.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.ApplicationInsights.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\Microsoft.AI.Web.xml
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\System.Web.Razor.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\EntityFramework.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\Microsoft.Owin.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csprojResolveAssemblyReference.cache
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.InitialCreate.resources
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.MigrateDB.resources
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csproj.GenerateResource.Cache
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csproj.CoreCompileInputs.cache
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.dll
+C:\Users\DoesNotExist\Desktop\DistanceLearning\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.pdb
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ApplicationInsights.config
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Web.dll.config
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Web.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Web.pdb
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Antlr3.Runtime.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Mail.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.Web.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Newtonsoft.Json.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Owin.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Helpers.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Mvc.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Optimization.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Razor.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\WebGrease.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Mail.pdb
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Helpers.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Mvc.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Optimization.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Razor.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Antlr3.Runtime.pdb
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Newtonsoft.Json.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.Web.xml
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\EntityFramework.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csprojResolveAssemblyReference.cache
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.InitialCreate.resources
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.MigrateDB.resources
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csproj.GenerateResource.Cache
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.dll
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.pdb
+C:\Users\Irina.Kozheshkurt.SU\Desktop\Sigma_Task_team04-master (1)\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.FixrelationCourseLesson.resources
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ApplicationInsights.config
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Web.dll.config
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Web.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Web.pdb
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Antlr3.Runtime.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Mail.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.Web.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Newtonsoft.Json.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Owin.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Helpers.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Mvc.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Optimization.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Razor.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\WebGrease.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Mail.pdb
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Helpers.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Mvc.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Optimization.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Razor.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Antlr3.Runtime.pdb
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Newtonsoft.Json.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.Web.xml
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\EntityFramework.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csprojResolveAssemblyReference.cache
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.InitialCreate.resources
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.MigrateDB.resources
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.FixrelationCourseLesson.resources
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csproj.GenerateResource.Cache
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csproj.CoreCompileInputs.cache
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.dll
+C:\Users\Kudesnik\Desktop\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.pdb
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ApplicationInsights.config
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\DistanceLearning.Web.dll.config
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\DistanceLearning.Web.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\DistanceLearning.Web.pdb
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Antlr3.Runtime.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\DistanceLearning.Mail.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\EntityFramework.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\EntityFramework.SqlServer.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AI.Agent.Intercept.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AI.DependencyCollector.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AI.Web.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AI.WindowsServer.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.ApplicationInsights.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Core.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.Cookies.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.Facebook.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.Google.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.OAuth.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.Twitter.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Web.Infrastructure.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Newtonsoft.Json.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Owin.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.Helpers.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.Mvc.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.Optimization.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.Razor.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.WebPages.Deployment.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.WebPages.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.WebPages.Razor.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\WebGrease.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\DistanceLearning.Mail.pdb
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.Helpers.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.Mvc.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.Optimization.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.Razor.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.WebPages.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.WebPages.Deployment.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\System.Web.WebPages.Razor.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Antlr3.Runtime.pdb
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Newtonsoft.Json.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\EntityFramework.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\EntityFramework.SqlServer.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Core.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.Facebook.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.Cookies.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.OAuth.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.Google.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.Twitter.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.ApplicationInsights.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AI.DependencyCollector.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AI.WindowsServer.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\Microsoft.AI.Web.xml
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\System.Web.Helpers.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\System.Web.Mvc.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\System.Web.Optimization.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\System.Web.Razor.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\System.Web.WebPages.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\System.Web.WebPages.Deployment.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\System.Web.WebPages.Razor.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\EntityFramework.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\EntityFramework.SqlServer.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\Microsoft.Owin.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\Microsoft.Owin.Host.SystemWeb.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Facebook.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Google.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csprojResolveAssemblyReference.cache
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.InitialCreate.resources
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.MigrateDB.resources
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.FixrelationCourseLesson.resources
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csproj.GenerateResource.Cache
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csproj.CoreCompileInputs.cache
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.dll
+A:\sigma\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.pdb
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csprojResolveAssemblyReference.cache
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.InitialCreate.resources
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.MigrateDB.resources
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.FixrelationCourseLesson.resources
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csproj.GenerateResource.Cache
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Courses.csproj.CoreCompileInputs.cache
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.pdb
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ApplicationInsights.config
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Web.dll.config
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Web.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Web.pdb
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Antlr3.Runtime.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Mail.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.SqlServer.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.Agent.Intercept.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.DependencyCollector.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.Web.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.WindowsServer.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.ApplicationInsights.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Facebook.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Google.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Twitter.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Newtonsoft.Json.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Owin.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Helpers.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Mvc.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Optimization.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Razor.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Deployment.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Razor.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\WebGrease.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\DistanceLearning.Mail.pdb
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\EntityFramework.SqlServer.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Helpers.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Mvc.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Optimization.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.Razor.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Deployment.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\System.Web.WebPages.Razor.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Antlr3.Runtime.pdb
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Newtonsoft.Json.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Facebook.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Google.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.Twitter.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.ApplicationInsights.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.DependencyCollector.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.WindowsServer.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\Microsoft.AI.Web.xml
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Helpers.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Mvc.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Optimization.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.Razor.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.WebPages.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.WebPages.Deployment.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\System.Web.WebPages.Razor.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Host.SystemWeb.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Facebook.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Google.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.TRel.resources

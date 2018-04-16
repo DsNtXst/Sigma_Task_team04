@@ -1,0 +1,24 @@
+﻿@model DistanceLearning.Web.Models.Course
+@{
+    ViewBag.Title = "Добавить курс";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <link rel="stylesheet" href="~/Content/TextBox.css">
+    <div>
+        <p align="center"><font size="7"><font face="Times New Roman, Times, serif"><b>Добавление курса</b></font></font></p>
+        @using (Html.BeginForm("Add", "Courses", FormMethod.Post))
+        {
+            <p>Название курса&ensp;@Html.EditorFor(m =>m.Name , new { htmlAttributes = new { @class = "input-style" } })</p>
+            <p>Количество часов&ensp;@Html.EditorFor(m => m.Hours, new { htmlAttributes = new { @class = "input-style" } })</p>
+            <input class ="input-style" type="submit" value="Добавить" />
+        }
+    </div>
+</body>
+</html>
+

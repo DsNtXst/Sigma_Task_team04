@@ -1,0 +1,39 @@
+﻿@model DistanceLearning.Web.Models.Course
+@{
+    ViewBag.Title = "Edit";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <link rel="stylesheet" href="~/Content/TextBox.css">
+    <div>
+        <p align="center"><font size="7"><font face="Times New Roman, Times, serif"><b>Редактирование курса</b></font></font></p>
+        @using (Html.BeginForm("Edit", "Courses", FormMethod.Post))
+    {
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <p>Название курса&ensp;@Html.EditorFor(Model => Model.Name, new { htmlAttributes = new { @class = "input-style" } })</p>
+        <p>Количество часов&ensp;@Html.EditorFor(Model => Model.Hours, new { htmlAttributes = new { @class = "input-style" } })</p>
+        <input class="input-style" type="submit" value="Сохранить" />
+}
+
+        <!-- (*-*) -->
+        @using (Html.BeginForm("ViewLessonAdd", "Lesson", FormMethod.Post))
+    {
+        <input type="hidden" name="Id_course" value="@Model.Id" />
+        <input class="input-style" type="submit" value="Добавить урок" />
+
+}
+        <!-- (*-*) -->
+        @using (Html.BeginForm("ViewTestAdd", "Test", FormMethod.Post))
+    {
+        <input type="hidden" name="Id_course" value="@Model.Id" />
+        <input class="input-style" type="submit" value="Добавить тест" />
+
+    }
+    </div>
+</body>
+</html>
+

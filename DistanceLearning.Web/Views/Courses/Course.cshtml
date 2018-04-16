@@ -1,0 +1,87 @@
+﻿@model DistanceLearning.Web.Models.Course
+@{
+    ViewBag.Title = "Course";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/TextBox.css">
+    <div>
+        <h7 align="left"><font size="8"><font face="Times New Roman, Times, serif"><b>@Html.DisplayFor(model => model.Name)</b></font></font></h7>
+        <h7>
+            @using (Html.BeginForm("Delete", "Courses", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <input class="input-style" type="submit" value="Удалить" />
+                </div>
+            }
+        </h7>
+        <h7>
+            @using (Html.BeginForm("Edit", "Courses", FormMethod.Get))
+            {
+                <input type="hidden" name="Id" value="@Model.Id" />
+                <input class="input-style" type="submit" value="Редактировать" />
+            }
+        </h7>
+        <p align="left"><font size="2">Количество часов @Html.DisplayFor(model => model.Hours)</font></p>
+        <hr />
+        <p>Уроки</p>
+        @foreach (var item in Model.Lessons)
+        {
+            <tr>
+                <p>
+                    @Html.DisplayFor(modelItem => item.Name)
+                    <!--(*-*)-->
+                    <!--
+                    <h7>[Html.RouteLink("Подробнее", new { controller = "Lesson", action = "ViewLessonAbout", Id = item.Id })
+                    ]</h7>-->
+                    <a href="/Lesson/ViewLessonAbout?id_lesson=@item.Id">
+                        Подробнее
+                    </a>
+                <td>
+                    @using (Html.BeginForm("Delete", "Lesson", FormMethod.Post))
+                    {
+                        <input type="hidden" name="id_lesson" value="@item.Id" />
+                        <input class="input-style" type="submit" value="удалить" />
+                    }
+                </td>
+                <!--(*-*)-->
+                </p>
+            </tr>
+        }
+            <fieldset>
+                <p>Тесты</p>
+                @foreach (var item in ViewBag.Tests)
+    {
+            <tr>
+                <p>
+                <td>@item.Name</td>
+
+                <a href="/Test/ViewTestAbout?id_test=@item.Id">
+                    Подробнее
+                </a>
+                <td>
+                    @using (Html.BeginForm("Delete", "Test", FormMethod.Post))
+        {
+            <input type="hidden" name="id_test" value="@item.Id" />
+            <input class="input-style" type="submit" value="удалить" />
+}
+                </td>
+                <!--(*-*)-->
+                </p>
+            </tr>
+}
+            </fieldset>
+
+    </div>
+</body>
+</html>
+
+

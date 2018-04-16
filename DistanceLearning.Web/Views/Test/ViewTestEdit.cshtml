@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Редактирование";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/TextBox.css">
+    <br />
+    <p>Редактирование теста @ViewBag.OneTest.Name</p>
+    <a href="/Test/ViewTestAbout?id_test=@ViewBag.OneTest.Id">
+        Назад к тесту
+    </a>
+    @using (Html.BeginForm("Update", "Test", FormMethod.Post))
+    {
+        <input type="hidden" name="Id" value="@ViewBag.OneTest.Id" />
+        <p>
+            <input type="text" name="Name" class="input-style" value="@ViewBag.OneTest.Name" /><br />
+        </p>
+        <p>
+            <input type="text" name="Time" value="@ViewBag.OneTest.Time" />
+        </p>
+        <p>
+            <input type="text" name="CountQuestions" value="@ViewBag.OneTest.CountQuestions" />
+        </p>
+        <p>
+            <input class="input-style" type="submit" value="Сохранить изменения" />
+        </p>
+
+    }
+    
+    @using (Html.BeginForm("AddQuestions", "Test", FormMethod.Post))
+    {
+        <input type="hidden" name="id_test" value="@ViewBag.OneTest.Id" />
+        <input class="input-style" type="submit" value="Добавить вопросы" />
+
+    }
+    <!--test-->
+
+</body>
+</html>
+

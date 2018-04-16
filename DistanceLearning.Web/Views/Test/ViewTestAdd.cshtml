@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "ViewTestAdd";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/TextBox.css">
+    <br />
+    <p>Добавление теста в курс №@ViewBag.Name</p>
+    <a href="/Courses/Course/@ViewBag.Id_course">
+        Назад к курсу
+    </a>
+
+    @using (Html.BeginForm("Add", "Test", FormMethod.Post))
+    {
+        <input type="hidden" name="CourseId" value="@ViewBag.Id_course" />
+        <fieldset>
+            <p>
+                Введите имя теста<br />
+                <input class="input-style" type="text" name="Name" /><br />
+            </p>
+            <!--<input type="text" name="Information" />-->
+            <p>
+                Введите время<br />
+                <input class="input-style" type="text" name="Time" /><br />
+            </p>
+            <p>
+                Введите кол-во вопросов<br />
+                <input class="input-style" type="text" name="CountQuestions" /><br />
+            </p>
+            <input class="input-style" type="submit" value="Добавить" />
+        </fieldset>
+
+    }
+    <!--test-->
+   
+</body>
+</html>
+
+

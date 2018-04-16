@@ -1,0 +1,106 @@
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\ApplicationInsights.config
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\DistanceLearning.dll.config
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\DistanceLearning.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\DistanceLearning.pdb
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Antlr3.Runtime.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\EntityFramework.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\EntityFramework.SqlServer.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.AI.Web.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.ApplicationInsights.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Newtonsoft.Json.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.Helpers.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.Mvc.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.Optimization.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.Razor.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.WebPages.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.WebPages.Razor.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\WebGrease.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\EntityFramework.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\EntityFramework.SqlServer.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.Helpers.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.Mvc.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.Optimization.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.Razor.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.WebPages.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\System.Web.WebPages.Razor.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Antlr3.Runtime.pdb
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Newtonsoft.Json.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.ApplicationInsights.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\Microsoft.AI.Web.xml
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\ru\System.Web.Razor.resources.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\obj\Debug\DistanceLearning.csprojResolveAssemblyReference.cache
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\obj\Debug\DistanceLearning.csproj.CoreCompileInputs.cache
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\obj\Debug\DistanceLearning.dll
+C:\Users\DoesNotExist\Documents\Visual Studio 2017\Projects\DistanceLearning\DistanceLearning\obj\Debug\DistanceLearning.pdb
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\ApplicationInsights.config
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\DistanceLearning.dll.config
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\DistanceLearning.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\DistanceLearning.pdb
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Antlr3.Runtime.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\EntityFramework.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\EntityFramework.SqlServer.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.AI.Agent.Intercept.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.AI.DependencyCollector.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.AI.PerfCounterCollector.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.AI.ServerTelemetryChannel.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.AI.Web.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.AI.WindowsServer.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.ApplicationInsights.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.Web.Infrastructure.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Newtonsoft.Json.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.Helpers.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.Mvc.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.Optimization.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.Razor.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.WebPages.Deployment.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.WebPages.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.WebPages.Razor.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\WebGrease.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\EntityFramework.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\EntityFramework.SqlServer.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.Helpers.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.Mvc.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.Optimization.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.Razor.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.WebPages.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.WebPages.Deployment.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\System.Web.WebPages.Razor.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Antlr3.Runtime.pdb
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Newtonsoft.Json.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.ApplicationInsights.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.AI.DependencyCollector.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.AI.ServerTelemetryChannel.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.AI.WindowsServer.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\Microsoft.AI.Web.xml
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\ru\System.Web.Helpers.resources.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\ru\System.Web.Mvc.resources.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\ru\System.Web.Optimization.resources.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\ru\System.Web.Razor.resources.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\ru\System.Web.WebPages.resources.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\ru\System.Web.WebPages.Deployment.resources.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\bin\ru\System.Web.WebPages.Razor.resources.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\obj\Debug\DistanceLearning.csprojResolveAssemblyReference.cache
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\obj\Debug\DistanceLearning.csproj.CoreCompileInputs.cache
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\obj\Debug\DistanceLearning.dll
+A:\Work\Projects\Sigma\Sigma_Task_team04\DistanceLearning\obj\Debug\DistanceLearning.pdb

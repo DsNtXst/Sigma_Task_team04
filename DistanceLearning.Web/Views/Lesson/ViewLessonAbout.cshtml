@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "ViewLessonAbout";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/TextBox.css">
+    <br />
+    <p><b>@ViewBag.OneLesson.Name</b></p>
+    <a href="/Courses/Course/@ViewBag.OneLesson.CourseId">
+        Назад к курсу
+    </a>
+    <!--TEST-->
+      <!--<p>@ViewBag.OneLesson.Information</p>-->
+        <p>@Html.Raw(ViewBag.OneLesson.Information)</p>
+
+        <!--Переход на редактирование-->
+        @using (Html.BeginForm("ViewLessonEdit", "Lesson", FormMethod.Post))
+        {
+            <input type="hidden" name="id_lesson" value="@ViewBag.OneLesson.Id" />
+            <input class="input-style" type="submit" value="Редактировать" />
+
+        }
+</body>
+</html>
