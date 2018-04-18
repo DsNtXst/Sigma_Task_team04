@@ -9,3 +9,9 @@ A:\sigma\Sigma_Task_team04\DistanceLearning.Mail\obj\Debug\DistanceLearning.Mail
 A:\sigma\Sigma_Task_team04\DistanceLearning.Mail\obj\Debug\DistanceLearning.Mail.csproj.CoreCompileInputs.cache
 A:\sigma\Sigma_Task_team04\DistanceLearning.Mail\obj\Debug\DistanceLearning.Mail.dll
 A:\sigma\Sigma_Task_team04\DistanceLearning.Mail\obj\Debug\DistanceLearning.Mail.pdb
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Mail\bin\Debug\DistanceLearning.Mail.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Mail\bin\Debug\DistanceLearning.Mail.pdb
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Mail\obj\Debug\DistanceLearning.Mail.csprojResolveAssemblyReference.cache
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Mail\obj\Debug\DistanceLearning.Mail.csproj.CoreCompileInputs.cache
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Mail\obj\Debug\DistanceLearning.Mail.dll
+E:\sda\Sigma_Task_team04-master\DistanceLearning.Mail\obj\Debug\DistanceLearning.Mail.pdb

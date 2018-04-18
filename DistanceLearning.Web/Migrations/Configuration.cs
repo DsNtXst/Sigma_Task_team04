@@ -48,30 +48,26 @@ namespace DistanceLearning.Web.Migrations
             lessons.ForEach(s => context.Lessons.Add(s));
             context.SaveChanges();
 
-            List<string> A1 = new List<string>();
-            A1.Add("f");
-            A1.Add("z");
-            A1.Add("t");
-            A1.Add("y");
 
 
 
-            var questions = new List<Question>
+            var quest = new List<Question>
             {
                new Question
                {
-                   Id=1,Task="фывфы",TrueAnswer="f",Answers=A1
+                   Id=1,Task="*uck",TrueAnswer="D",WrongAnswer1="U",WrongAnswer2="g",WrongAnswer3="t",TestId=1
                }
             };
-            questions.ForEach(s => context.Questions.Add(s));
+            quest.ForEach(s => context.Questions.Add(s));
             context.SaveChanges();
 
+            int idd = 1;
             var tests = new List<Test>
             {
                 new Test
                {
-                   Id =1, CountQuestions=1,Name="Модуль",CourseId=3,Time=TimeSpan.Parse("00:20:00"),Questions=questions
-               }
+                   Id = 1, CountQuestions=1 ,Name="Модуль",CourseId=3,Time=TimeSpan.Parse("00:20:00"),Questions=quest
+        }
             };
             tests.ForEach(s => context.Tests.Add(s));
             context.SaveChanges();

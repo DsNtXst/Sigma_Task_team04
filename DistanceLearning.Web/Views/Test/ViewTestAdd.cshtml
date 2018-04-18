@@ -17,6 +17,7 @@
     <a href="/Courses/Course/@ViewBag.Id_course">
         Назад к курсу
     </a>
+   
 
     @using (Html.BeginForm("Add", "Test", FormMethod.Post))
     {
@@ -31,11 +32,13 @@
                 Введите время<br />
                 <input class="input-style" type="text" name="Time" /><br />
             </p>
-            <p>
+            @*<p>
                 Введите кол-во вопросов<br />
                 <input class="input-style" type="text" name="CountQuestions" /><br />
-            </p>
+            </p>*@
+         
             <input class="input-style" type="submit" value="Добавить" />
+           
         </fieldset>
 
     }

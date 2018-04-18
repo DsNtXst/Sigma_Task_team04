@@ -214,6 +214,10 @@
     <Compile Include="Migrations\201804160747476_TRel.Designer.cs">
       <DependentUpon>201804160747476_TRel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804171423117_RelQ.cs" />
+    <Compile Include="Migrations\201804171423117_RelQ.Designer.cs">
+      <DependentUpon>201804171423117_RelQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Course.cs" />
@@ -298,6 +302,7 @@
     <Content Include="Views\Test\ViewTestAdd.cshtml" />
     <Content Include="Views\Test\ViewTestAbout.cshtml" />
     <Content Include="Views\Test\ViewTestEdit.cshtml" />
+    <Content Include="Views\Test\ViewTestAddQuest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -327,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804160747476_TRel.resx">
       <DependentUpon>201804160747476_TRel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804171423117_RelQ.resx">
+      <DependentUpon>201804171423117_RelQ.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

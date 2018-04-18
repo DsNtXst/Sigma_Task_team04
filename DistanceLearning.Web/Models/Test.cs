@@ -12,7 +12,7 @@ namespace DistanceLearning.Web.Models
 
         public string Name { get; set; }
 
-        public IEnumerable<Question> Questions { get; set; }
+        public List<Question> Questions { get; set; }
 
         public int CountQuestions { get; set; }
 

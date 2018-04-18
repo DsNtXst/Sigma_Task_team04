@@ -33,7 +33,7 @@
 
     }
     
-    @using (Html.BeginForm("AddQuestions", "Test", FormMethod.Post))
+    @using (Html.BeginForm("ViewTestAddQuest", "Test", FormMethod.Post))
     {
         <input type="hidden" name="id_test" value="@ViewBag.OneTest.Id" />
         <input class="input-style" type="submit" value="Добавить вопросы" />

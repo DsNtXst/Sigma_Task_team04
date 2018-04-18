@@ -1,0 +1,53 @@
+﻿@*@Model @List<@Question>*@
+    @{
+        ViewBag.Title = "ViewTestAddQuest";
+    }
+
+    <h2>ViewTestAddQuest</h2>
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+        <link rel="stylesheet" href="~/Content/CourseInfo.css">
+        <link rel="stylesheet" href="~/Content/TextBox.css">
+        <br />
+        <p>Добавление вопроса в тест №@ViewBag.Id</p>
+        <a href="/Courses/Course/@ViewBag.Id_test">
+            Назад к курсу
+        </a>
+
+        @using (Html.BeginForm("AddQues", "Test", FormMethod.Post))
+        {
+            <input type="hidden" name="TestId" value="@ViewBag.Id_test" />
+            <fieldset>
+                <p>
+                    Введите вопрос<br />
+                    <input class="input-style" type="text" name="Task" /><br />
+                </p>
+                <!--<input type="text" name="Information" />-->
+                <p>
+                    Введите правильный ответ<br />
+                    <input class="input-style" type="text" name="TrueAnswer" /><br />
+                </p>
+                <p>
+                    Введите неверный ответ<br />
+                    <input class="input-style" type="text" name="WrongAnswer1" /><br />
+                </p>
+                <p>
+                    Введите неверный ответ<br />
+                    <input class="input-style" type="text" name="WrongAnswer2" /><br />
+                </p>
+                <p>
+                    Введите неверный ответ<br />
+                    <input class="input-style" type="text" name="WrongAnswer3" /><br />
+                </p>
+                <input class="input-style" type="submit" value="Добавить" />
+            </fieldset>
+        }
+        <!--test-->
+
+    </body>
+</html>

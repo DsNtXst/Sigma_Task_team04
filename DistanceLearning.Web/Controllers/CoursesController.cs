@@ -10,14 +10,12 @@ namespace DistanceLearning.Web.Controllers
     {
         readonly DistanceLearningContext context = new DistanceLearningContext();
 
-        public ActionResult Course(int Id)
+        public ActionResult Course(int? Id)
         {
                 var course = context.Courses.Find(Id);
 
                 IEnumerable<Test> tests = context.Tests.Where(j => j.CourseId == Id);
-
                 ViewBag.Tests = tests;
-
                 return View(course);
 
         }
