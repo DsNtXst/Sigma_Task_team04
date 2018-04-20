@@ -10,7 +10,7 @@ namespace DistanceLearning.Web.Models
 {
     public class ApplicationUserContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationUserContext() : base("DistanceLearning") { }
+        public ApplicationUserContext() : base("base") { }
 
         public static ApplicationUserContext Create()
         {
@@ -28,6 +28,7 @@ namespace DistanceLearning.Web.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            //---modelBuilder.Entity<Test>().HasOptional(a => a.Questions).WithOptionalDependent().WillCascadeOnDelete(true);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace DistanceLearning.Web
     {
         protected void Application_Start()
         {
-            Database.SetInitializer<ApplicationUserContext>(new AppDbInitializer());
+            //Database.SetInitializer<ApplicationUserContext>(new AppDbInitializer());
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

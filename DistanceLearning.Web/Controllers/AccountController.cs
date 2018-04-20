@@ -94,10 +94,9 @@ namespace DistanceLearning.Web.Controllers
                     {
                         IsPersistent = true
                     }, claim);
-                    //if (GetRole()[0]=="admin") return RedirectToAction("MyCourses", "Courses");
-                    //else if (GetRole()[0] == "user") return RedirectToAction("AllCourses", "Courses");
-                    //else return RedirectToAction("Login", "Account");
-                    if (GetRole()[0] == "admin") return RedirectToAction("MyCourses", "Courses");
+                    string Current = User.Identity.Name;
+                    if (Current == "admin@admin.admin") return RedirectToAction("MyCourses", "Courses");
+                    //if (GetRole()[0] == "admin") return RedirectToAction("MyCourses", "Courses");
                     else return RedirectToAction("AllCourses", "Courses"); ;
                 }
             }

@@ -192,6 +192,18 @@
     <Compile Include="Migrations\201804191657352_TQRel.Designer.cs">
       <DependentUpon>201804191657352_TQRel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804201143032_KuKu.cs" />
+    <Compile Include="Migrations\201804201143032_KuKu.Designer.cs">
+      <DependentUpon>201804201143032_KuKu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804201157491_F.cs" />
+    <Compile Include="Migrations\201804201157491_F.Designer.cs">
+      <DependentUpon>201804201157491_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804201218322_g.cs" />
+    <Compile Include="Migrations\201804201218322_g.Designer.cs">
+      <DependentUpon>201804201218322_g.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbInitializer.cs" />
     <Compile Include="Models\ApplicationUserContext.cs" />
@@ -291,6 +303,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804191657352_TQRel.resx">
       <DependentUpon>201804191657352_TQRel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804201143032_KuKu.resx">
+      <DependentUpon>201804201143032_KuKu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804201157491_F.resx">
+      <DependentUpon>201804201157491_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804201218322_g.resx">
+      <DependentUpon>201804201218322_g.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

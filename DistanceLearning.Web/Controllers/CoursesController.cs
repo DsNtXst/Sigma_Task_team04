@@ -13,7 +13,6 @@ namespace DistanceLearning.Web.Controllers
     {
         ApplicationUserContext db = new ApplicationUserContext();
 
-        [Authorize]
         [Authorize(Roles = "admin")]
         public ActionResult MyCourses()
         {
@@ -29,17 +28,13 @@ namespace DistanceLearning.Web.Controllers
             return View();
         }
 
-        [Authorize]
         [Authorize(Roles = "user")]
         public ActionResult AllCourses()
         {
-            IEnumerable<Course> courses = db.Courses;
-            ViewBag.Courses = courses;
-            return View();
+            return View(db.Courses.ToList());
         }
 
         [HttpGet]
-        [Authorize]
         [Authorize(Roles = "admin")]
         public ActionResult Add()
         {
@@ -73,7 +68,6 @@ namespace DistanceLearning.Web.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         [Authorize(Roles = "admin")]
         public ActionResult Edit(int Id)
         {
