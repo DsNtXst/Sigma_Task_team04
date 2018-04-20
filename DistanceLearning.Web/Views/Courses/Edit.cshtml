@@ -14,6 +14,7 @@
         @using (Html.BeginForm("Edit", "Courses", FormMethod.Post))
     {
         <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="hidden" name="LectorEmail" value="@Model.LectorEmail" />
         <p>Название курса&ensp;@Html.EditorFor(Model => Model.Name, new { htmlAttributes = new { @class = "input-style" } })</p>
         <p>Количество часов&ensp;@Html.EditorFor(Model => Model.Hours, new { htmlAttributes = new { @class = "input-style" } })</p>
         <input class="input-style" type="submit" value="Сохранить" />
@@ -27,13 +28,13 @@
 
 }
         <!-- (*-*) -->
+        <!-- (*-*) -->
         @using (Html.BeginForm("ViewTestAdd", "Test", FormMethod.Post))
     {
         <input type="hidden" name="Id_course" value="@Model.Id" />
         <input class="input-style" type="submit" value="Добавить тест" />
 
-    }
+}
     </div>
 </body>
 </html>
-

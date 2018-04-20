@@ -1,5 +1,5 @@
 ﻿.btn-class {
-    text-decoration:none;
+    text-decoration: none;
     display: inline-block;
     border: none;
     color: #030200;
@@ -11,8 +11,8 @@
     height: 170px;
     font-size: 24px;
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 0px 0 0 #000000,inset 0 -1px 0 0 #000000,inset 0 0 0 1px #000000,0 2px 4px 0 #000000;
     -moz-box-shadow: 0 0px 0 0 #000000,inset 0 -1px 0 0 #000000,inset 0 0 0 1px #000000,0 2px 4px 0 #000000;
     -webkit-box-shadow: 0 0px 0 0 #000000,inset 0 -1px 0 0 #000000,inset 0 0 0 1px #000000,0 2px 4px 0 #000000;
@@ -35,4 +35,3 @@ ul li {
     border: 5px;
     margin-bottom: 5px;
 }
-    

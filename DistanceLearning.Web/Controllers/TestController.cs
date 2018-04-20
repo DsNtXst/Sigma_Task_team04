@@ -9,8 +9,7 @@ namespace DistanceLearning.Web.Controllers
 {
     public class TestController : Controller
     {
-
-        DistanceLearningContext db = new DistanceLearningContext();
+        ApplicationUserContext db = new ApplicationUserContext();
 
         Test tesd;
         //вывод формы добавление теста
@@ -33,11 +32,11 @@ namespace DistanceLearning.Web.Controllers
         }
 
         [HttpGet]
-      
+
         public ActionResult ViewTestAbout(int? id_test)
         {
             var test = db.Tests.Find(id_test);
-            IEnumerable<Question> ques =db.Questions.Where(j => j.TestId == id_test);
+            IEnumerable<Question> ques = db.Questions.Where(j => j.TestId == id_test);
             //var tesd = db.Tests.Where(l => l.Id == id_test).FirstOrDefault();
             ViewBag.Questions = ques;
             ViewData["ques"] = ques.Count();
@@ -70,7 +69,7 @@ namespace DistanceLearning.Web.Controllers
             Test tes = db.Tests.Where(l => l.Id == test.Id).FirstOrDefault();
             tes.Name = test.Name;
             tes.CountQuestions = test.CountQuestions;
-            tes.Time = test.Time;           
+            tes.Time = test.Time;
             db.SaveChanges();
             return RedirectToAction("ViewTestAbout", "Test", new { id_test = test.Id });
 
@@ -90,18 +89,18 @@ namespace DistanceLearning.Web.Controllers
         {
             db.Questions.Add(ques);
             db.SaveChanges();
-            return RedirectToAction("ViewTestAbout", "Test",  new { id_test= ques.TestId });
+            return RedirectToAction("ViewTestAbout", "Test", new { id_test = ques.TestId });
         }
         [HttpPost]
         //удаление урока
         public ActionResult DeleteQ(int id_question)
         {
-           
+
             Question ques = db.Questions.Where(l => l.Id == id_question).FirstOrDefault();
             int? cid = ques.TestId;
             db.Questions.Remove(ques);
             db.SaveChanges();
-            return RedirectToAction("ViewTestAbout", "Test", new { id_test = cid});
+            return RedirectToAction("ViewTestAbout", "Test", new { id_test = cid });
 
         }
         // GET: Test

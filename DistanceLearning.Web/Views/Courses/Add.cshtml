@@ -2,7 +2,6 @@
 @{
     ViewBag.Title = "Добавить курс";
 }
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,11 +13,11 @@
         <p align="center"><font size="7"><font face="Times New Roman, Times, serif"><b>Добавление курса</b></font></font></p>
         @using (Html.BeginForm("Add", "Courses", FormMethod.Post))
         {
-            <p>Название курса&ensp;@Html.EditorFor(m =>m.Name , new { htmlAttributes = new { @class = "input-style" } })</p>
+            <input type="hidden" name="LectorEmail" value="@ViewBag.LectorEmail" />
+            <p>Название курса&ensp;@Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "input-style" } })</p>
             <p>Количество часов&ensp;@Html.EditorFor(m => m.Hours, new { htmlAttributes = new { @class = "input-style" } })</p>
-            <input class ="input-style" type="submit" value="Добавить" />
+            <input class="input-style" type="submit" value="Добавить" />
         }
     </div>
 </body>
 </html>
-

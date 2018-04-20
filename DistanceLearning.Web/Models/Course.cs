@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.ComponentModel.DataAnnotations;
 
 namespace DistanceLearning.Web.Models
@@ -16,8 +19,7 @@ namespace DistanceLearning.Web.Models
 
         public int Mark { get; set; }
 
-        public Lector LectorId { get; set; }
-
+        public string LectorEmail { get; set; }
 
         public virtual ICollection<Lesson> Lessons { get; set; }
 

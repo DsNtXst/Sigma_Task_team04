@@ -56,32 +56,34 @@
                 </p>
             </tr>
         }
-            <fieldset>
-                <p>Тесты</p>
-                @foreach (var item in ViewBag.Tests)
-    {
-            <tr>
-                <p>
-                <td>@item.Name</td>
+        <fieldset>
+            <p>Тесты</p>
+            @foreach (var item in ViewBag.Tests)
+            {
+                <tr>
+                    <p>
+                    <td>@item.Name</td>
 
-                <a href="/Test/ViewTestAbout?id_test=@item.Id">
-                    Подробнее
-                </a>
-                <td>
-                    @using (Html.BeginForm("Delete", "Test", FormMethod.Post))
-        {
-            <input type="hidden" name="id_test" value="@item.Id" />
-            <input class="input-style" type="submit" value="удалить" />
-}
-                </td>
-                <!--(*-*)-->
-                </p>
-            </tr>
-}
-            </fieldset>
+                    <a href="/Test/ViewTestAbout?id_test=@item.Id">
+                        Подробнее
+                    </a>
+                    <td>
+                        @using (Html.BeginForm("Delete", "Test", FormMethod.Post))
+                        {
+                            <input type="hidden" name="id_test" value="@item.Id" />
+                            <input class="input-style" type="submit" value="удалить" />
+                        }
+                    </td>
+                    <!--(*-*)-->
+                    </p>
+                </tr>
+            }
+        </fieldset>
 
     </div>
 </body>
 </html>
+
+
 
 

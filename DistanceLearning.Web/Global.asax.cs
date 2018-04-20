@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using System.Data.Entity;
-using DistanceLearning.Models;
+using DistanceLearning.Web.Models;
 
 namespace DistanceLearning.Web
 {
@@ -14,6 +14,7 @@ namespace DistanceLearning.Web
     {
         protected void Application_Start()
         {
+            Database.SetInitializer<ApplicationUserContext>(new AppDbInitializer());
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

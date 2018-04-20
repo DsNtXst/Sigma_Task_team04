@@ -1,41 +1,48 @@
-﻿@model DistanceLearning.Web.Models.RegisterViewModel
+﻿@model DistanceLearning.Web.Models.RegisterModel
+
 @{
-    ViewBag.Title = "Регистрация";
+    ViewBag.Title = "Register";
+    Layout = "";
 }
+<!DOCTYPE html>
+<html>
 
-<h2>@ViewBag.Title.</h2>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="~/Content/login.css" />
+</head>
 
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-{
-    @Html.AntiForgeryToken()
-    <h4>Создайте новую учетную запись.</h4>
-    <hr />
-    @Html.ValidationSummary("", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+<body>
+    <div>
+        <div class="background">
+            <div class="logo">Distance Learning</div>
+            <div class="registration-block">
+                <div class="enter">
+                    <h1>Sing up</h1>
+                </div>
+                <div class="inputValues">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(false)
+                        <h4>Name</h4>
+                        @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "input", @placeholder = "Name" } })
+                        <h4>Surname</h4>
+                        @Html.EditorFor(m => m.SurName, new { htmlAttributes = new { @class = "input", @placeholder = "Surname" } })
+                        <h4>Middle Name</h4>
+                        @Html.EditorFor(m => m.MiddleName, new { htmlAttributes = new { @class = "input", @placeholder = "Middle Name" } })
+                        <h4>E-mail</h4>
+                        @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "input", @placeholder = "E-mail" } })
+                        <h4>Password</h4>
+                        @Html.EditorFor(m => m.Password, new { htmlAttributes = new { @class = "input", @placeholder = "Password" } })
+                        <h4>Confirm the password</h4>
+                        @Html.EditorFor(m => m.PasswordConfirm, new { htmlAttributes = new { @class = "input", @placeholder = "Password" } })
+                        <input type="submit" value="SIGN UP" class="btn">
+                    }
+                </div>
+            </div>
         </div>
     </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Регистрация" />
-        </div>
-    </div>
-}
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+</body>
+</html>

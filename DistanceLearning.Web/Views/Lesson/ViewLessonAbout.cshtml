@@ -15,15 +15,15 @@
         Назад к курсу
     </a>
     <!--TEST-->
-      <!--<p>@ViewBag.OneLesson.Information</p>-->
-        <p>@Html.Raw(ViewBag.OneLesson.Information)</p>
+    <!--<p>@ViewBag.OneLesson.Information</p>-->
+    <p>@Html.Raw(ViewBag.OneLesson.Information)</p>
+    <!--Переход на редактирование-->
+    @using (Html.BeginForm("ViewLessonEdit", "Lesson", FormMethod.Post))
+    {
+        <input type="hidden" name="id_lesson" value="@ViewBag.OneLesson.Id" />
+        <input class="input-style" type="submit" value="Редактировать" />
 
-        <!--Переход на редактирование-->
-        @using (Html.BeginForm("ViewLessonEdit", "Lesson", FormMethod.Post))
-        {
-            <input type="hidden" name="id_lesson" value="@ViewBag.OneLesson.Id" />
-            <input class="input-style" type="submit" value="Редактировать" />
-
-        }
+    }
 </body>
 </html>
+

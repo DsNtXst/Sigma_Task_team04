@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceLearning.Web", "DistanceLearning.Web\DistanceLearning.Web.csproj", "{0C835BCC-ADF2-4D60-85FB-3B5FAFBA81EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceLearning.BusinessLayer", "DistanceLearning.BusinessLayer\DistanceLearning.BusinessLayer.csproj", "{D0E0D414-2550-4948-BA4C-C9270265154E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C835BCC-ADF2-4D60-85FB-3B5FAFBA81EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C835BCC-ADF2-4D60-85FB-3B5FAFBA81EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C835BCC-ADF2-4D60-85FB-3B5FAFBA81EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C835BCC-ADF2-4D60-85FB-3B5FAFBA81EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E0D414-2550-4948-BA4C-C9270265154E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E0D414-2550-4948-BA4C-C9270265154E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E0D414-2550-4948-BA4C-C9270265154E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E0D414-2550-4948-BA4C-C9270265154E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11E7E601-843F-447E-894E-8AA7302A3316}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+C:\Users\DoesNotExist\Desktop\СИГМА\DistanceLearning.Web\DistanceLearning.BusinessLayer\bin\Debug\DistanceLearning.BusinessLayer.dll
+C:\Users\DoesNotExist\Desktop\СИГМА\DistanceLearning.Web\DistanceLearning.BusinessLayer\bin\Debug\DistanceLearning.BusinessLayer.pdb
+C:\Users\DoesNotExist\Desktop\СИГМА\DistanceLearning.Web\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\DoesNotExist\Desktop\СИГМА\DistanceLearning.Web\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\DoesNotExist\Desktop\СИГМА\DistanceLearning.Web\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.dll
+C:\Users\DoesNotExist\Desktop\СИГМА\DistanceLearning.Web\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.pdb
+E:\DistanceLearning.Web\DistanceLearning.BusinessLayer\bin\Debug\DistanceLearning.BusinessLayer.dll
+E:\DistanceLearning.Web\DistanceLearning.BusinessLayer\bin\Debug\DistanceLearning.BusinessLayer.pdb
+E:\DistanceLearning.Web\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.csproj.CoreCompileInputs.cache
+E:\DistanceLearning.Web\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.dll
+E:\DistanceLearning.Web\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.pdb

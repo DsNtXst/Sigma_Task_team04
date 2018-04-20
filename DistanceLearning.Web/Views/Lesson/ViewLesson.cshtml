@@ -1,13 +1,5 @@
 ﻿<!--БОЛЬШЕ НЕ НУЖНА--СМОТРЕТЬ COURSES/COURSE-->
-
-
-
-
-
-
-
 <!--БОЛЬШЕ НЕ НУЖНА--СМОТРЕТЬ COURSES/COURSE-->
-
 @{
     ViewBag.Title = "ViewLesson";
 }
@@ -17,7 +9,7 @@
         <td></td>
     </tr>
     @foreach (var b in ViewBag.Lessons)
-     {
+    {
         <tr>
             <td><p>@b.Id</p></td>
             <td><p>@b.Name</p></td>
@@ -28,9 +20,8 @@
                     <input type="hidden" name="id_lesson" value="@b.Id" />
                     <input class="input-style" type="submit" value="удалить" />
                 }
-                
-            </td>
 
+            </td>
             <!--зона перехода на подробнее-->
             <td>
                 <a href="/Lesson/ViewLessonAbout?id_lesson=@b.Id">
@@ -47,10 +38,8 @@
 
             </td>
             -->
-            
-</tr>
+
+        </tr>
     }
 </table>
-
 <a href="/Lesson/ViewLessonAdd">%Добавить урок%</a>
-                

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.ComponentModel.DataAnnotations;
-using DistanceLearning.Models;
 
 namespace DistanceLearning.Web.Models
 {
@@ -12,7 +13,7 @@ namespace DistanceLearning.Web.Models
 
         public string Name { get; set; }
 
-        public List<Question> Questions { get; set; }
+        public IEnumerable<Question> Questions { get; set; }
 
         public int CountQuestions { get; set; }
 

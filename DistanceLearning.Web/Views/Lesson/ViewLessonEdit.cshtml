@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "ViewLessonEdit";
 }
 <!DOCTYPE html>
@@ -20,7 +19,7 @@
         <input type="hidden" name="Id" value="@ViewBag.OneLesson.Id" />
         <input type="text" name="Name" class="input-style" value="@ViewBag.OneLesson.Name" /><br />
         <!--<input type="text" name="Information" value="@ViewBag.OneLesson.Information" />-->
-        <textarea  name="Information" class="input-style">@ViewBag.OneLesson.Information</textarea><br />
+        <textarea name="Information" class="input-style">@ViewBag.OneLesson.Information</textarea><br />
         <input class="input-style" type="submit" value="Сохранить изменения" />
 
     }

@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Courses";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <link rel="stylesheet" href="~/Content/Course.css">
+    <div>
+        <p align="center"><font size="7"><font face="Times New Roman, Times, serif"><b>Доступные курсы</b></font></font></p>
+        <ul>
+            @foreach (var b in ViewBag.Courses)
+            {
+                <li><a class="btn-class" href="../../Courses/Course/@b.Id">@b.Name</a></li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
+

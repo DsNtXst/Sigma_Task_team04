@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using DistanceLearning.Models;
 using DistanceLearning.Web.Models;
-
 
 namespace DistanceLearning.Web.Controllers
 {
     public class LessonController : Controller
     {
-        DistanceLearningContext db = new DistanceLearningContext();
+        ApplicationUserContext db = new ApplicationUserContext();
 
         //не надо-есть в курсах
         //вывод всех уроков у курса
@@ -21,13 +19,10 @@ namespace DistanceLearning.Web.Controllers
 
             lessons = db.Lessons.Where(l => l.CourseId == Id_course).ToList();
             ViewBag.Lessons = lessons;
-
-
-
             return View();
         }*/
 
-        
+
         //вывод формы добавление урока
         [HttpPost]
         public ActionResult ViewLessonAdd(int Id_course)
@@ -49,7 +44,7 @@ namespace DistanceLearning.Web.Controllers
 
             db.SaveChanges();
 
-            return RedirectToAction("Course", "Courses",new { Id= lesson.CourseId });
+            return RedirectToAction("Course", "Courses", new { Id = lesson.CourseId });
 
         }
 
@@ -82,7 +77,7 @@ namespace DistanceLearning.Web.Controllers
         //вывод формы редактирование
         public ActionResult ViewLessonEdit(int id_lesson)
         {
-           var lesd = db.Lessons.Where(l => l.Id == id_lesson).FirstOrDefault();
+            var lesd = db.Lessons.Where(l => l.Id == id_lesson).FirstOrDefault();
             ViewBag.OneLesson = lesd;
 
             return View();
@@ -100,9 +95,8 @@ namespace DistanceLearning.Web.Controllers
 
             db.SaveChanges();
 
-            return RedirectToAction("ViewLessonAbout","Lesson", new {id_lesson=les.Id});
+            return RedirectToAction("ViewLessonAbout", "Lesson", new { id_lesson = les.Id });
 
         }
-
     }
 }
