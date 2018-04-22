@@ -22,6 +22,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Выйти", "Logout", "Account")</li>
+             @if (this.User.IsInRole("user"))
+                {
+                    <li>@Html.ActionLink("Тест-список моих курсов", "ViewUserCourses", "Users")</li>
+                 }
                 </ul>
             </div>
         </div>

@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "ViewSuccessMessage";
+}
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Готово!</h4>
+    <p>Вы успешно подписались на курс #@ViewBag.IDcourse</p>
+    <hr>
+    <p class="mb-0">Вы можете отписаться от курса на странице курса</p>
+    <a href="../../Courses/Course/@ViewBag.IDcourse">Назад к курсу</a>
+</div>
+

@@ -25,6 +25,7 @@ namespace DistanceLearning.Web.Controllers
 
         //вывод формы добавление урока
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public ActionResult ViewLessonAdd(int Id_course)
         {
             ViewBag.Id_course = Id_course;
@@ -38,6 +39,7 @@ namespace DistanceLearning.Web.Controllers
         //добавление урока
         [HttpPost]
         [ValidateInput(false)]
+        [Authorize(Roles = "admin")]
         public ActionResult Add(Lesson lesson)
         {
             db.Lessons.Add(lesson);
@@ -62,6 +64,7 @@ namespace DistanceLearning.Web.Controllers
 
         [HttpPost]
         //удаление урока
+        [Authorize(Roles = "admin")]
         public ActionResult Delete(int id_lesson)
         {
             Lesson les = db.Lessons.Where(l => l.Id == id_lesson).FirstOrDefault();
@@ -74,6 +77,7 @@ namespace DistanceLearning.Web.Controllers
 
         }
         [HttpPost]
+        [Authorize(Roles = "admin")]
         //вывод формы редактирование
         public ActionResult ViewLessonEdit(int id_lesson)
         {

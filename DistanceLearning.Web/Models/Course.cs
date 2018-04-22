@@ -24,5 +24,9 @@ namespace DistanceLearning.Web.Models
         public virtual ICollection<Lesson> Lessons { get; set; }
 
         public virtual ICollection<Test> Tests { get; set; }
+
+        //21 04
+        public virtual ICollection<ApplicationUser> People { get; set; }
+
     }
 }

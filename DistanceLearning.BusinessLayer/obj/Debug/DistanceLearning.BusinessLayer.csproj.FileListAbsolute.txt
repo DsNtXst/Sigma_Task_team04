@@ -9,3 +9,9 @@ C:\Users\DoesNotExist\Desktop\СИГМА\DistanceLearning.Web\DistanceLearning.B
 C:\Users\DoesNotExist\Desktop\СИГМА\DistanceLearning.Web\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.csproj.CoreCompileInputs.cache
 C:\Users\DoesNotExist\Desktop\СИГМА\DistanceLearning.Web\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.dll
 C:\Users\DoesNotExist\Desktop\СИГМА\DistanceLearning.Web\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.pdb
+A:\sigma reborn\Sigma_Task_team04\DistanceLearning.BusinessLayer\bin\Debug\DistanceLearning.BusinessLayer.dll
+A:\sigma reborn\Sigma_Task_team04\DistanceLearning.BusinessLayer\bin\Debug\DistanceLearning.BusinessLayer.pdb
+A:\sigma reborn\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.csprojResolveAssemblyReference.cache
+A:\sigma reborn\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.csproj.CoreCompileInputs.cache
+A:\sigma reborn\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.dll
+A:\sigma reborn\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.pdb

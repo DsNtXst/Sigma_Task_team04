@@ -181,6 +181,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LessonController.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,6 +204,10 @@
     <Compile Include="Migrations\201804201218322_g.cs" />
     <Compile Include="Migrations\201804201218322_g.Designer.cs">
       <DependentUpon>201804201218322_g.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804220700107_ConnUsCo.cs" />
+    <Compile Include="Migrations\201804220700107_ConnUsCo.Designer.cs">
+      <DependentUpon>201804220700107_ConnUsCo.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbInitializer.cs" />
@@ -274,6 +279,8 @@
     <Content Include="Views\Test\ViewTestAdd.cshtml" />
     <Content Include="Views\Test\ViewTestEdit.cshtml" />
     <Content Include="Views\Test\ViewTestAddQuest.cshtml" />
+    <Content Include="Views\Users\ViewUserCourses.cshtml" />
+    <Content Include="Views\Users\ViewSuccessMessage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -312,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804201218322_g.resx">
       <DependentUpon>201804201218322_g.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804220700107_ConnUsCo.resx">
+      <DependentUpon>201804220700107_ConnUsCo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

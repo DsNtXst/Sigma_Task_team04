@@ -6,6 +6,11 @@ using System.Web;
 using System.Web.Mvc;
 using DistanceLearning.Web.Models;
 using System.Data.Entity;
+//
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace DistanceLearning.Web.Controllers
 {
@@ -43,6 +48,7 @@ namespace DistanceLearning.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public ActionResult Add(Course course)
         {
             db.Courses.Add(course);
@@ -52,6 +58,7 @@ namespace DistanceLearning.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public ActionResult Delete(int Id)
         {
             Course b = db.Courses.Find(Id);
@@ -91,6 +98,24 @@ namespace DistanceLearning.Web.Controllers
             IEnumerable<Test> tests = db.Tests.Where(j => j.CourseId == Id);
 
             ViewBag.Tests = tests;
+
+            //22 04
+            //проверяем-подписан ли студент на курс
+            if (this.User.IsInRole("user"))
+            {
+                ApplicationUser user = db.Users.Find(User.Identity.GetUserId());
+                var cour = user.Courses.Where(l => l.Id == Id).FirstOrDefault();
+
+                bool isSubcribe = false;
+
+                if (cour != null)
+                {
+                    isSubcribe = true;
+                }
+
+                ViewBag.IsSubcribe = isSubcribe;
+            }
+
 
             return View(course);
 

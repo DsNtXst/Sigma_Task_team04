@@ -18,5 +18,8 @@ namespace DistanceLearning.Web.Models
         {
 
         }
+
+        //22 04
+        public virtual ICollection<Course> Courses { get; set; }
     }
 }

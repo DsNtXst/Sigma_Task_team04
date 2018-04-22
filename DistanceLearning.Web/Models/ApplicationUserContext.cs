@@ -25,6 +25,9 @@ namespace DistanceLearning.Web.Models
 
         public DbSet<Question> Questions { get; set; }
 
+        //22 04
+        //public DbSet<ApplicationUser> Users { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
