@@ -10,7 +10,7 @@ namespace DistanceLearning.Web.Controllers
     {
         public ActionResult Index()
         {
-            return RedirectToAction("Login", "Account");
+            return RedirectToAction("AllCourses", "Courses");
         }
     }
 }

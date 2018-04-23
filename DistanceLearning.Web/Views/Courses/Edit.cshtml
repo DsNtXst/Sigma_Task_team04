@@ -20,21 +20,18 @@
         <input class="input-style" type="submit" value="Сохранить" />
 }
 
-        <!-- (*-*) -->
         @using (Html.BeginForm("ViewLessonAdd", "Lesson", FormMethod.Post))
     {
         <input type="hidden" name="Id_course" value="@Model.Id" />
         <input class="input-style" type="submit" value="Добавить урок" />
+    }
 
-}
-        <!-- (*-*) -->
-        <!-- (*-*) -->
         @using (Html.BeginForm("ViewTestAdd", "Test", FormMethod.Post))
     {
         <input type="hidden" name="Id_course" value="@Model.Id" />
         <input class="input-style" type="submit" value="Добавить тест" />
 
-}
+    }
     </div>
 </body>
 </html>

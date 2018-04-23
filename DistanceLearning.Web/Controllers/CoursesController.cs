@@ -33,9 +33,10 @@ namespace DistanceLearning.Web.Controllers
             return View();
         }
 
-        [Authorize(Roles = "user")]
+       // [Authorize(Roles = "user")]
         public ActionResult AllCourses()
         {
+            if (this.User.IsInRole("admin")) return RedirectToAction("MyCourses", "Courses");//23 04 -чтобы избавиться от ситуации когда админ не может попасть на MyCourses
             return View(db.Courses.ToList());
         }
 

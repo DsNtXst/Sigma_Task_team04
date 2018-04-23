@@ -57,7 +57,7 @@ namespace DistanceLearning.Web.Controllers
         public ActionResult Logout()
         {
             AuthenticationManager.SignOut();
-            return RedirectToAction("Login");
+            return RedirectToAction("AllCourses","Courses");
         }
 
         private IAuthenticationManager AuthenticationManager

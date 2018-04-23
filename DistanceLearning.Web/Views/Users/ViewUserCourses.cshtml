@@ -2,24 +2,41 @@
 @{
     ViewBag.Title = "ViewUserCourses";
 }
-<h2>Курсы на которые я подписан Тестовый вариант</h2>
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../Content/bootstrap.css">
 </head>
 <body>
-    <link rel="stylesheet" href="~/Content/Course.css">
-    <link rel="stylesheet" href="~/Content/Course.css">
-    <div>
-        
-        <ul>
-            @foreach (var b in ViewBag.Courses)
-            {
-                <li><a class="btn-class" href="../../Courses/Course/@b.Id">@b.Name</a></li>
-            }
-        </ul>
-    </div>
+    
+    <br>
+    <h2>Курсы на которые я подписан</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Курс</th>
+                <th scope="col">Прогресс</th>
+                <th scope="col">Оценка</th>
+            </tr>
+        </thead>
+        @foreach (var b in ViewBag.Courses)
+        {
+        <tbody>
+            <tr>
+                <td><a href="../../Courses/Course/@b.Id">@b.Name</a></td>
+                 
+                <td>Zero</td>
+                <td>Zero</td>
+            </tr>
+            <!--как вставить?
+            <div class="progress">
+                     <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                 </div>-->
+            
+        </tbody>
+        }
+    </table>
 </body>
 </html>
 

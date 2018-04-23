@@ -27,10 +27,10 @@
                         <input type="hidden" name="returnUrl" value="@ViewBag.returnUrl" />
                         @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "input", @placeholder = "E-mail" } })
                         @Html.EditorFor(m => m.Password, new { htmlAttributes = new { @class = "input", @placeholder = "Password" } })
-                        <input type="submit" value="SIGN IN" class="btn">
+                        <input type="submit" value="Войти в систему" class="btn">
                     }
                     <form>
-                        <input type="button" value="SIGN UP" class="btn" onClick='location.href="../../Account/Register"'>
+                        <input type="button" value="Зарегистрироваться" class="btn" onClick='location.href="../../Account/Register"'>
                     </form>
                 </div>
             </div>
