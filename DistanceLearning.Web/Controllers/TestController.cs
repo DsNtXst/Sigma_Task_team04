@@ -79,6 +79,7 @@ namespace DistanceLearning.Web.Controllers
         {
 
             ViewBag.Id_test = Id_test;
+         
             return View();
 
         }
@@ -103,9 +104,19 @@ namespace DistanceLearning.Web.Controllers
             return RedirectToAction("ViewTestAbout", "Test", new { id_test = cid });
 
         }
+        public ActionResult TestRun(int id_test)
+        {
+            var test = db.Tests.Find(id_test);
+            IEnumerable<Question> ques = db.Questions.Where(j => j.TestId == id_test);
+            ViewBag.Questions = ques;
+            ViewData["ques"] = ques.Count();           
+            return View(test);
+
+        }
         // GET: Test
         public ActionResult Index()
         {
+
             return View();
         }
     }

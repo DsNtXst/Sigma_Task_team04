@@ -7,6 +7,7 @@ namespace DistanceLearning.Web.Migrations
     {
         public override void Up()
         {
+
             CreateTable(
                 "dbo.Courses",
                 c => new

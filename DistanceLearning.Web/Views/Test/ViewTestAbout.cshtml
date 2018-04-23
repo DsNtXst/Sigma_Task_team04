@@ -13,46 +13,54 @@
     <link rel="stylesheet" href="~/Content/CourseInfo.css">
     <link rel="stylesheet" href="~/Content/TextBox.css">
     <br />
-    <a href="/Courses/Course/@ViewBag.Id_course">
-        <h7 align="left"><font size="8"><font face="Times New Roman, Times, serif"><b>@Html.DisplayFor(model => model.Name)</b></font></font></h7>
+    <p>
+        <a href="/Courses/Course/@Model.CourseId">
+            Назад к курсу
+        </a>
+    </p>
 
-        <!--TEST-->
-        <p><h3>Кол-во вопросов</h3></p>
-        <h7>@ViewData["ques"]</h7>
-        <p><h3>Время на выполнение</h3></p>
-        <p>@Html.DisplayFor(model => model.Time)</p>
+    <h7 align="left"><font size="8"><font face="Times New Roman, Times, serif"><b>@Html.DisplayFor(model => model.Name)</b></font></font></h7>
+
+    <!--TEST-->
+    <p><h3>Кол-во вопросов</h3></p>
+    <h7>@ViewData["ques"]</h7>
+    <p><h3>Время на выполнение</h3></p>
+    <p>@Html.DisplayFor(model => model.Time)</p>
 
 
+    @if (this.User.IsInRole("admin"))
+    {
         <fieldset>
+            <legend>Вопросы</legend>
             @foreach (var item in ViewBag.Questions)
             {
-                <p>
-                <p><h3>Вопрос :</h3></p>
-                <h4>@item.Task</h4>
-                <p><h3>Варианты :</h3></p>
-                <h5>@item.TrueAnswer</h5>
-                <h5>@item.WrongAnswer1</h5>
-                <h5>@item.WrongAnswer2</h5>
-                <h5>@item.WrongAnswer3</h5>
+                <ul>
+                    <li>
+                        @item.Task
+                        @using (Html.BeginForm("DeleteQ", "Test", FormMethod.Post))
+                        {
+                            <input type="hidden" name="id_question" value="@item.Id" />
+                            <input class="input-style" type="submit" value="УДАЛИТЬ" />
+                        }
 
-                @using (Html.BeginForm("DeleteQ", "Test", FormMethod.Post))
-                {
-                    <input type="hidden" name="id_question" value="@item.Id" />
-                    <input class="input-style" type="submit" value="УДАЛИТЬ" />
-                }
-                </p>
+                    </li>
+                </ul>
             }
+
         </fieldset>
 
+    }
 
-
+    @if (this.User.IsInRole("admin"))
+    {
         <!--Переход на редактирование-->
-        @using (Html.BeginForm("ViewTestEdit", "Test", FormMethod.Post))
-        {
-            <input type="hidden" name="id_test" value="@Model.Id" />
-            <input class="input-style" type="submit" value="Редактировать" />
-
-        }
+            using (Html.BeginForm("ViewTestEdit", "Test", FormMethod.Post))
+            {
+                <input type="hidden" name="id_test" value="@Model.Id" />
+                <input class="input-style" type="submit" value="Редактировать" />
+            }
+    }
+    
 </body>
 </html>
 

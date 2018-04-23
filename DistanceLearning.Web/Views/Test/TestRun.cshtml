@@ -1,0 +1,51 @@
+﻿@using DistanceLearning.Web.Models;
+@using System.Collections.Generic;
+
+@{
+    ViewBag.Title = "TestRun";
+}
+
+<h2>TestRun</h2>
+@model DistanceLearning.Web.Models.Test
+<body>
+    
+    @foreach (var item in ViewBag.Questions)
+
+    {
+
+        Random rand = new Random();
+        string[] mas = new string[4];
+        mas[0] = @item.WrongAnswer1;
+        mas[1] = @item.WrongAnswer2;
+        mas[2] = @item.WrongAnswer3;
+        mas[3] = @item.TrueAnswer;
+
+
+
+
+        //@*for (int i = mas.Length - 1; i > 0; i--)
+        //{
+        //    //int index = rand.Next(i + 1);
+        //    //string swap = mas[index];
+        //    //mas[index] = mas[0];
+        //    //mas[i] = swap;
+        //}*@
+
+
+
+
+        <form>
+            <p><b> &quot;@item.Task&quot;</b></p>
+            <p>
+                <input type="radio" name="answer" value="a1">@mas[0]<Br>
+                <input type="radio" name="answer" value="a2">@mas[1]<Br>
+                <input type="radio" name="answer" value="a3">@mas[2]<Br>
+                <input type="radio" name="answer" value="a4">@mas[3]<Br>
+            </p>
+        </form>
+
+    }
+    <p><input type="submit" name="Закончить"></p>
+
+</body>
+

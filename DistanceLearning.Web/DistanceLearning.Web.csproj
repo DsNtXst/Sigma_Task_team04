@@ -189,10 +189,6 @@
     <Compile Include="Migrations\201804191322341_InitialCreate.Designer.cs">
       <DependentUpon>201804191322341_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804191657352_TQRel.cs" />
-    <Compile Include="Migrations\201804191657352_TQRel.Designer.cs">
-      <DependentUpon>201804191657352_TQRel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201804201143032_KuKu.cs" />
     <Compile Include="Migrations\201804201143032_KuKu.Designer.cs">
       <DependentUpon>201804201143032_KuKu.cs</DependentUpon>
@@ -208,6 +204,10 @@
     <Compile Include="Migrations\201804220700107_ConnUsCo.cs" />
     <Compile Include="Migrations\201804220700107_ConnUsCo.Designer.cs">
       <DependentUpon>201804220700107_ConnUsCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231538072_fixtry.cs" />
+    <Compile Include="Migrations\201804231538072_fixtry.Designer.cs">
+      <DependentUpon>201804231538072_fixtry.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbInitializer.cs" />
@@ -281,6 +281,7 @@
     <Content Include="Views\Test\ViewTestAddQuest.cshtml" />
     <Content Include="Views\Users\ViewUserCourses.cshtml" />
     <Content Include="Views\Users\ViewSuccessMessage.cshtml" />
+    <Content Include="Views\Test\TestRun.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -308,9 +309,6 @@
     <EmbeddedResource Include="Migrations\201804191322341_InitialCreate.resx">
       <DependentUpon>201804191322341_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804191657352_TQRel.resx">
-      <DependentUpon>201804191657352_TQRel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804201143032_KuKu.resx">
       <DependentUpon>201804201143032_KuKu.cs</DependentUpon>
     </EmbeddedResource>
@@ -322,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804220700107_ConnUsCo.resx">
       <DependentUpon>201804220700107_ConnUsCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231538072_fixtry.resx">
+      <DependentUpon>201804231538072_fixtry.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -31,6 +31,10 @@ namespace DistanceLearning.Web.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Question>()
+           .HasOptional<Test>(s => s.Test)
+           .WithMany()
+           .WillCascadeOnDelete(false);
             //---modelBuilder.Entity<Test>().HasOptional(a => a.Questions).WithOptionalDependent().WillCascadeOnDelete(true);
         }
     }
