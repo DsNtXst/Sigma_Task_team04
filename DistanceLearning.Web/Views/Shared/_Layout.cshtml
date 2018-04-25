@@ -20,7 +20,11 @@
                 @Html.ActionLink("Distance Learning", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    @if (this.User.IsInRole("user"))
+                    {
+                        <li>@Html.ActionLink("Личный кабинет", "ViewUserCourses", "Users")</li>
+                    }
 
                     @if (this.User.Identity.IsAuthenticated)
                     {
@@ -33,11 +37,6 @@
 
                     }
 
-
-             @if (this.User.IsInRole("user"))
-                {
-                    <li>@Html.ActionLink("Личный кабинет", "ViewUserCourses", "Users")</li>
-                 }
                 </ul>
             </div>
         </div>
