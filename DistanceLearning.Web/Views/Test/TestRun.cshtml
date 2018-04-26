@@ -1,51 +1,81 @@
 ﻿@using DistanceLearning.Web.Models;
 @using System.Collections.Generic;
+@using System;
+@model DistanceLearning.Web.Models.Test
+
 
 @{
     ViewBag.Title = "TestRun";
 }
 
 <h2>TestRun</h2>
-@model DistanceLearning.Web.Models.Test
 <body>
-    
-    @foreach (var item in ViewBag.Questions)
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/TextBox.css">
 
+    @using (Html.BeginForm("TestRun", "Test", FormMethod.Post))
     {
+        int r = 0;
+        foreach (var item in ViewBag.Questions)
+        {
+            string tr = @item.TrueAnswer;
+            string current = string.Empty;
 
-        Random rand = new Random();
-        string[] mas = new string[4];
-        mas[0] = @item.WrongAnswer1;
-        mas[1] = @item.WrongAnswer2;
-        mas[2] = @item.WrongAnswer3;
-        mas[3] = @item.TrueAnswer;
-
-
-
-
-        //@*for (int i = mas.Length - 1; i > 0; i--)
-        //{
-        //    //int index = rand.Next(i + 1);
-        //    //string swap = mas[index];
-        //    //mas[index] = mas[0];
-        //    //mas[i] = swap;
-        //}*@
+            var N = new Random();
+            string[] mas = new string[4];
+            mas[0] = @item.WrongAnswer1;
+            mas[1] = @item.WrongAnswer2;
+            mas[2] = @item.WrongAnswer3;
+            mas[3] = @item.TrueAnswer;
 
 
+            int i = mas.Length - 1;
+            int j = N.Next(i + 1);
+
+            string tmp = mas[j];
+            mas[j] = mas[i];
+            if (mas[j] == tr) current = "a" +(j + 1).ToString();
+            mas[i] = tmp;
+            if (mas[i] == tr) current = "a" + (i + 1).ToString();
+            i--;
+            j = N.Next(i + 1);
+            tmp = mas[j];
+            mas[j] = mas[i];
+            if (mas[j] == tr) current = "a" + (j + 1).ToString();
+            mas[i] = tmp;
+            if (mas[i] == tr) current = "a" + (i + 1).ToString();
+            i--;
+            j = N.Next(i + 1);
+            tmp = mas[j];
+            mas[j] = mas[i];
+            if (mas[j] == tr) current = "a" + (j + 1).ToString();
+            mas[i] = tmp;
+            if (mas[i] == tr) current = "a" + (i + 1).ToString();
 
 
-        <form>
-            <p><b> &quot;@item.Task&quot;</b></p>
-            <p>
-                <input type="radio" name="answer" value="a1">@mas[0]<Br>
-                <input type="radio" name="answer" value="a2">@mas[1]<Br>
-                <input type="radio" name="answer" value="a3">@mas[2]<Br>
-                <input type="radio" name="answer" value="a4">@mas[3]<Br>
-            </p>
-        </form>
 
+
+
+            string d = "answer[" + r + "]";
+            string z = "curr[" + r + "]";
+
+            <div>
+                <p><b> &quot;@item.Task&quot;</b></p>
+                <p>
+                    <input type="radio" name=@d value="a1">@mas[0]<Br>
+                    <input type="radio" name=@d value="a2">@mas[1]<Br>
+                    <input type="radio" name=@d value="a3">@mas[2]<Br>
+                    <input type="radio" name=@d value="a4">@mas[3]<Br>
+                    <input type="hidden" name=@z value=@current>
+                </p>
+            </div>
+            r++;
+        }
+        <input type="hidden" name="TestId" value=@Model.Id>
+        <input class="input-style" type="submit" value="Отправить" />
     }
-    <p><input type="submit" name="Закончить"></p>
+
 
 </body>
+
 

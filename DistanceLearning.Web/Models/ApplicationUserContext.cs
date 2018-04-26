@@ -25,6 +25,8 @@ namespace DistanceLearning.Web.Models
 
         public DbSet<Question> Questions { get; set; }
 
+        public DbSet<Result> Results { get; set; }
+
         //22 04
         //public DbSet<ApplicationUser> Users { get; set; }
 

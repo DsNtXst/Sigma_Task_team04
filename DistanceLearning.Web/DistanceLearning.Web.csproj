@@ -209,6 +209,14 @@
     <Compile Include="Migrations\201804231538072_fixtry.Designer.cs">
       <DependentUpon>201804231538072_fixtry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804261558110_Res.cs" />
+    <Compile Include="Migrations\201804261558110_Res.Designer.cs">
+      <DependentUpon>201804261558110_Res.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804261617042_NRes.cs" />
+    <Compile Include="Migrations\201804261617042_NRes.Designer.cs">
+      <DependentUpon>201804261617042_NRes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbInitializer.cs" />
     <Compile Include="Models\ApplicationUserContext.cs" />
@@ -220,6 +228,7 @@
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\RegisterModel.cs" />
+    <Compile Include="Models\Result.cs" />
     <Compile Include="Models\Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -282,6 +291,7 @@
     <Content Include="Views\Users\ViewUserCourses.cshtml" />
     <Content Include="Views\Users\ViewSuccessMessage.cshtml" />
     <Content Include="Views\Test\TestRun.cshtml" />
+    <Content Include="Views\Test\ResultOfTest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -323,6 +333,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804231538072_fixtry.resx">
       <DependentUpon>201804231538072_fixtry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804261558110_Res.resx">
+      <DependentUpon>201804261558110_Res.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804261617042_NRes.resx">
+      <DependentUpon>201804261617042_NRes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

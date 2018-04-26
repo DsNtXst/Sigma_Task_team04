@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using DistanceLearning.Web.Models;
+using Microsoft.AspNet.Identity;
 
 namespace DistanceLearning.Web.Controllers
 {
@@ -79,7 +80,7 @@ namespace DistanceLearning.Web.Controllers
         {
 
             ViewBag.Id_test = Id_test;
-         
+
             return View();
 
         }
@@ -104,15 +105,46 @@ namespace DistanceLearning.Web.Controllers
             return RedirectToAction("ViewTestAbout", "Test", new { id_test = cid });
 
         }
+
         public ActionResult TestRun(int id_test)
         {
             var test = db.Tests.Find(id_test);
             IEnumerable<Question> ques = db.Questions.Where(j => j.TestId == id_test);
             ViewBag.Questions = ques;
-            ViewData["ques"] = ques.Count();           
+            ViewData["ques"] = ques.Count();
             return View(test);
 
         }
+
+        [HttpPost]
+        public ActionResult TestRun(string[] answer, string[] curr, int TestId)
+        {
+            double oneP = 100.0 / answer.Length;
+            int trueAns = 0;
+            for (int i =0;i<answer.Length;i++)
+            {
+                if (answer[i] == curr[i]) trueAns++;
+            }
+            double Result = trueAns* oneP;
+
+
+
+            Result R = new Result() { TestId = TestId, UserEmail = User.Identity.Name, Progress = Result };
+
+
+            db.Results.Add(R);
+            db.SaveChanges();
+            return RedirectToAction("ResultOfTest", "Test", new { k = Result });
+
+
+        }
+
+        public ActionResult ResultOfTest(double k)
+        {
+            ViewBag.Res = k;
+            return View();
+        }
+
         // GET: Test
         public ActionResult Index()
         {
