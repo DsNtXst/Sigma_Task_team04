@@ -18,17 +18,67 @@ namespace DistanceLearning.Web.Controllers
         public ActionResult ViewTestAdd(int Id_course)
         {
             ViewBag.Id_course = Id_course;
+
+
+            //27 04 проверяем-есть ли уже екзамен
+            IEnumerable<Test> tests = db.Tests.Where(j => j.CourseId == Id_course);
+            IEnumerable<Exam> exams = tests.OfType<Exam>();
+            int count = 0;
+            //if (exams == null)
+            //    ViewBag.OneMoreExam = true;
+            //else ViewBag.OneMoreExam = false;
+            if (exams != null)
+            { count = exams.Count(); }
+            if (count == 0)
+            { ViewBag.OneMoreExam = true; }
+            else
+            { ViewBag.OneMoreExam = false; }
+
+
             return View();
 
         }
 
         //добавление теста
+        //[HttpPost]
+        //[ValidateInput(false)]
+        //public ActionResult Add(Test test)
+        //{
+        //    db.Tests.Add(test);
+        //    db.SaveChanges();
+        //    return RedirectToAction("Course", "Courses", new { Id = test.CourseId });
+        //}
+
+        //добавление теста (и екзамена)
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult Add(Test test)
+        public ActionResult Add(Test test,bool? IsExam)
         {
-            db.Tests.Add(test);
-            db.SaveChanges();
+            
+            //27 04-режим екзамен
+        
+
+
+            if(IsExam!=null)
+            {
+                Exam ex = new Exam();
+                ex.IsConfirmed = false;
+
+                ex.CourseId = test.CourseId;
+                ex.Name = test.Name;
+                ex.Time = test.Time;
+
+                db.Tests.Add(ex);
+                db.SaveChanges();
+            }
+            else
+            {
+                
+                db.Tests.Add(test);
+                db.SaveChanges();
+
+            }
+            
             return RedirectToAction("Course", "Courses", new { Id = test.CourseId });
         }
 
@@ -145,11 +195,6 @@ namespace DistanceLearning.Web.Controllers
             return View();
         }
 
-        // GET: Test
-        public ActionResult Index()
-        {
 
-            return View();
-        }
     }
 }

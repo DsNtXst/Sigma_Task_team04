@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "Course";
 }
+@using DistanceLearning.Web.Models
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +40,7 @@
         <h7>
             @if (this.User.IsInRole("user"))
             {
-                if (@ViewBag.IsSubcribe == true)
+                if (ViewBag.IsSubcribe == true)
                 {
                     <div class="alert alert-success" role="alert">
                         Вы подписаны на курс
@@ -93,31 +94,83 @@
                         <fieldset>
 
                             <legend>Тесты</legend>
-                            @foreach (var item in ViewBag.Tests)
-                    {
+                            @foreach (Test item in ViewBag.Tests)
+                            {
+                                if (!(item.GetType().ToString()).Contains("Exam"))
+                                {<p>@item.Name</p>
 
-                        <p>@item.Name</p>
-
-                        if (this.User.IsInRole("admin"))
-                        {
+                                    if (this.User.IsInRole("admin"))
+                                    {
                             <a href="/Test/ViewTestAbout?id_test=@item.Id">
                                 Подробнее
                             </a>
-                                using (Html.BeginForm("Delete", "Test", FormMethod.Post))
-                                {
+                                        using (Html.BeginForm("Delete", "Test", FormMethod.Post))
+                                        {
                                   <input type="hidden" name="id_test" value="@item.Id" />
                                   <input class="input-style" type="submit" value="удалить" />
-                                }
-                         }
-                        if(this.User.IsInRole("user"))
-                        {
+                                        }
+                                    }
+                                    if (this.User.IsInRole("user")&& ViewBag.IsSubcribe)
+                                    {
                                   <a href="/Test/TestRun?id_test=@item.Id">
                                       Пройти
                                   </a>
-                        }
- }
-                        </fieldset>
+                                        }
+                                 }
 
+                                }
+                        </fieldset>
+        <!--27 04-->
+
+        <fieldset>
+
+            <legend>Экзамен</legend>
+
+            @foreach (var m in ViewBag.Exam)
+            {
+                if (@ViewBag.Exam != null)
+                {
+                <p>@m.Name</p>
+
+                    if (this.User.IsInRole("admin"))
+                    {
+                    <a href="/Test/ViewTestAbout?id_test=@m.Id">
+                        Подробнее
+                    </a>
+                        using (Html.BeginForm("Delete", "Test", FormMethod.Post))
+                        {
+                        <input type="hidden" name="id_test" value="@m.Id" />
+                                <input class="input-style" type="submit" value="удалить" />
+                        }
+                    }
+                    if (this.User.IsInRole("user")&& ViewBag.IsSubcribe)
+                    {
+                        if (ViewBag.Ability)
+                        {
+                    <a href="/Test/TestRun?id_test=@m.Id">
+                        Пройти
+                    </a>
+                        }
+                        else
+                        {
+                            if (ViewBag.ExamPassed)
+                            {
+
+                                <p style="color:#00ff00">Экзамен пройден</p>
+
+                            }
+                            else
+                            {
+
+                                <p style="color:#ff0000">Пройти(не доступно)</p>
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        </fieldset>
     </div>
 </body>
 </html>

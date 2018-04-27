@@ -217,6 +217,10 @@
     <Compile Include="Migrations\201804261617042_NRes.Designer.cs">
       <DependentUpon>201804261617042_NRes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804271430002_AddExam.cs" />
+    <Compile Include="Migrations\201804271430002_AddExam.Designer.cs">
+      <DependentUpon>201804271430002_AddExam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbInitializer.cs" />
     <Compile Include="Models\ApplicationUserContext.cs" />
@@ -224,6 +228,7 @@
     <Compile Include="Models\ApplicationUserManager.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\CourseCRUD.cs" />
+    <Compile Include="Models\Exam.cs" />
     <Compile Include="Models\Lesson.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\Question.cs" />
@@ -339,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804261617042_NRes.resx">
       <DependentUpon>201804261617042_NRes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804271430002_AddExam.resx">
+      <DependentUpon>201804271430002_AddExam.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

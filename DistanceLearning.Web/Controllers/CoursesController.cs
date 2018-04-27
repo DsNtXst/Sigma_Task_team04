@@ -96,12 +96,20 @@ namespace DistanceLearning.Web.Controllers
         {
             var course = db.Courses.Find(Id);
 
-            IEnumerable<Test> tests = db.Tests.Where(j => j.CourseId == Id);
+            //IEnumerable<Test> tests = db.Tests.Where(j => j.CourseId == Id);
 
+            //27 04
+            IEnumerable<Test> tests = db.Tests.Where(j => j.CourseId == Id);
+            IEnumerable<Exam> exams = tests.OfType<Exam>();
+        
+            ViewBag.Exam = exams;
             ViewBag.Tests = tests;
 
+
+
+
             //22 04
-            //проверяем-подписан ли студент на курс
+#region проверяем-подписан ли студент на курс
             if (this.User.IsInRole("user"))
             {
                 ApplicationUser user = db.Users.Find(User.Identity.GetUserId());
@@ -115,11 +123,101 @@ namespace DistanceLearning.Web.Controllers
                 }
 
                 ViewBag.IsSubcribe = isSubcribe;
+    
+            //27 04
+#region проверяем все ли тесты прошел
+
+
+            //ViewBag.Ability = CheckAbilityPassingExam(Id,tests);
+
+
+            int count_of_test = tests.Count();//общее число тестов на курсе
+            int count_passed = 0;//количество прошедших тестов
+
+            IEnumerable<Result> rez = db.Results;
+
+
+            //находим результат--находим тест--находим курс
+            foreach (Result it in rez)
+            {
+                if (this.User.Identity.Name == it.UserEmail)
+                {
+                    Test test = tests.Where(l => l.Id == it.TestId).FirstOrDefault();
+
+
+
+                    if (test != null)
+                    {
+                       Course cour2 = db.Courses.Find(test.CourseId);
+
+
+                        if (course.Id == cour2.Id)
+                        {
+                            count_passed++;
+
+#region прверяем прошел ли екзамен
+
+                            if ((test.GetType().ToString()).Contains("Exam"))
+                            {
+                                ViewBag.ExamPassed = true;
+                            }
+                            else
+                            {
+                                ViewBag.ExamPassed = false;
+                            }
+
+#endregion
+
+                        }
+                    }
+                }
             }
 
+            if (count_passed == count_of_test - 1) ViewBag.Ability = true;
+            else ViewBag.Ability = false;
+                #endregion
 
+            }
+            #endregion
+            if(ViewBag.ExamPassed ==null) ViewBag.ExamPassed =false;
             return View(course);
 
+
+
         }
+
+        //27/04 проверяет давать возможность пройти тест
+        //bool CheckAbilityPassingExam(int CourseId, IEnumerable<Test> tests)
+        //{
+        //    Course current= db.Courses.Find(CourseId);
+        
+
+        //    int count_of_test= tests.Count();//общее число тестов на курсе
+        //    int count_passed = 0;//количество прошедших тестов
+
+        //    IEnumerable<Result> rez = db.Results;
+
+
+        //    //находим результат--находим тест--находим курс
+        //    foreach (Result it in rez )
+        //    {
+        //        if (this.User.Identity.Name == it.UserEmail)
+        //        {
+        //            //Test test = db.Tests.Find(it.TestId);
+
+        //            //Course course = db.Courses.Find(test.CourseId);
+
+        //            Test test = tests.Where(l => l.Id == it.TestId).FirstOrDefault();
+        //            Course course = db.Courses.Where(c=>c.Id==test.CourseId).FirstOrDefault();
+
+        //            if (course.Id == current.Id)
+        //                count_passed++;
+        //        }
+        //    }
+
+        //    if (count_passed == count_passed - 1) return true;
+
+        //    return false;
+        //}
     }
 }

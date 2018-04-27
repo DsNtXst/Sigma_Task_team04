@@ -37,9 +37,22 @@
                     <input class="input-style" type="text" name="CountQuestions" /><br />
                 </p>*@
 
+
+            <!--27/4-->
+            @if (ViewBag.OneMoreExam)//условие добавления только одного екзамена
+            {<input  name="isExam" type="checkbox" value="false" /><a>Сделать экзаменом</a> <br/>
+            }
+            else
+            {
+                <p>не могу сделать экзаменом-уже один есть</p><br />
+
+            }
+
             <input class="input-style" type="submit" value="Добавить" />
 
         </fieldset>
+        
+
 
     }
     <!--test-->
