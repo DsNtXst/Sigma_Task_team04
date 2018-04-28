@@ -110,15 +110,27 @@
                                   <input class="input-style" type="submit" value="удалить" />
                                         }
                                     }
-                                    if (this.User.IsInRole("user")&& ViewBag.IsSubcribe)
+                                    if (this.User.IsInRole("user") && ViewBag.IsSubcribe)
                                     {
-                                  <a href="/Test/TestRun?id_test=@item.Id">
-                                      Пройти
-                                  </a>
-                                        }
-                                 }
+                                        //28 04
+                                        if (((List<int>)ViewBag.id_passed_tests).Where(i => i == item.Id).FirstOrDefault() == item.Id)
+                                        {
 
+                                            <p style="color:#00ff00">тест пройден</p>
+
+                                        }
+                                        else
+                                        {
+                                            <a href="/Test/TestRun?id_test=@item.Id">
+                                            Пройти
+                                            </a>
+                                        }
+
+
+                                    }
                                 }
+
+                            }
                         </fieldset>
         <!--27 04-->
 

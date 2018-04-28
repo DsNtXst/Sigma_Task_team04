@@ -98,11 +98,18 @@ namespace DistanceLearning.Web.Controllers
 
             //IEnumerable<Test> tests = db.Tests.Where(j => j.CourseId == Id);
 
+            
+
             //27 04
             IEnumerable<Test> tests = db.Tests.Where(j => j.CourseId == Id);
             IEnumerable<Exam> exams = tests.OfType<Exam>();
-        
-            ViewBag.Exam = exams;
+
+#region какие тесты пройденны ч1
+            //28 04
+            List<int> id_passed_tests=new List<int>();
+                #endregion
+
+                ViewBag.Exam = exams;
             ViewBag.Tests = tests;
 
 
@@ -136,6 +143,7 @@ namespace DistanceLearning.Web.Controllers
 
             IEnumerable<Result> rez = db.Results;
 
+        
 
             //находим результат--находим тест--находим курс
             foreach (Result it in rez)
@@ -154,10 +162,14 @@ namespace DistanceLearning.Web.Controllers
                         if (course.Id == cour2.Id)
                         {
                             count_passed++;
+#region какие тесты пройденны ч2
+                                //28 04
+                                id_passed_tests.Add(test.Id);
+                                //k 28 04
+#endregion
+                                #region прверяем прошел ли екзамен
 
-#region прверяем прошел ли екзамен
-
-                            if ((test.GetType().ToString()).Contains("Exam"))
+                                if ((test.GetType().ToString()).Contains("Exam"))
                             {
                                 ViewBag.ExamPassed = true;
                             }
@@ -175,16 +187,24 @@ namespace DistanceLearning.Web.Controllers
 
             if (count_passed == count_of_test - 1) ViewBag.Ability = true;
             else ViewBag.Ability = false;
-                #endregion
+#endregion
 
             }
-            #endregion
+#endregion
             if(ViewBag.ExamPassed ==null) ViewBag.ExamPassed =false;
+
+           
+            ViewBag.id_passed_tests = id_passed_tests;
+
+
+
             return View(course);
 
 
 
         }
+
+
 
         //27/04 проверяет давать возможность пройти тест
         //bool CheckAbilityPassingExam(int CourseId, IEnumerable<Test> tests)
