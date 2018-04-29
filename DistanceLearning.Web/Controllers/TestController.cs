@@ -62,7 +62,7 @@ namespace DistanceLearning.Web.Controllers
             if(IsExam!=null)
             {
                 Exam ex = new Exam();
-                ex.IsConfirmed = false;
+                //ex.Status = 0;
 
                 ex.CourseId = test.CourseId;
                 ex.Name = test.Name;
@@ -179,7 +179,7 @@ namespace DistanceLearning.Web.Controllers
 
 
 
-            Result R = new Result() { TestId = TestId, UserEmail = User.Identity.Name, Progress = Result };
+            Result R = new Result() { TestId = TestId, UserEmail = User.Identity.Name, Progress = Result,Status=0 };
 
 
             db.Results.Add(R);

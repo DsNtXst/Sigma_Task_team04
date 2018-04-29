@@ -17,5 +17,7 @@ namespace DistanceLearning.Web.Models
         public int TestId { get; set; }
 
         public double Progress { get; set; }
+        //
+        public byte Status { get; set; }
     }
 }

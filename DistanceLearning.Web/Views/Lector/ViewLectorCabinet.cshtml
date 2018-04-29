@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "ViewLectorCabinet";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../Content/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/TextBox.css">
+</head>
+<body>
+
+    <br>
+    <h2>Неподтвержденные результаты студентов</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Студент</th>
+                <th scope="col">Курс</th>
+                <th scope="col">Результат</th>
+                <th scope="col">Действие</th>
+            </tr>
+        </thead>
+        @foreach (var b in ViewBag.ekzRez)
+        {
+            <tbody>
+                <tr>
+                    <td>@b.UserEmail</td>
+
+                    <td>@ViewBag.courses_names.Dequeue()</td>
+                    <td>@b.Progress</td>
+                    <td>
+                        @using (Html.BeginForm("AcceptRezult", "Lector", FormMethod.Post))
+                        {
+                            <input type="hidden" name="rezId" value="@b.Id" />
+     
+                            <input class="input-style" type="submit" value="Подтвердить" />
+
+
+                        }
+                        
+                        @using (Html.BeginForm("RejectRezult", "Lector", FormMethod.Post))
+                        {
+                            <input type="hidden" name="rezId" value="@b.Id" />
+
+                            <input class="input-style" type="submit" value="Отклонить" />
+
+
+                        }
+
+
+
+                    </td>
+                </tr>
+                <!--как вставить?
+                <div class="progress">
+                         <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                     </div>-->
+
+            </tbody>
+        }
+    </table>
+</body>
+</html>

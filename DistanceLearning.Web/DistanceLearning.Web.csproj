@@ -179,6 +179,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LectorController.cs" />
     <Compile Include="Controllers\LessonController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -220,6 +221,14 @@
     <Compile Include="Migrations\201804271430002_AddExam.cs" />
     <Compile Include="Migrations\201804271430002_AddExam.Designer.cs">
       <DependentUpon>201804271430002_AddExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804291304221_ChangeExam.cs" />
+    <Compile Include="Migrations\201804291304221_ChangeExam.Designer.cs">
+      <DependentUpon>201804291304221_ChangeExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804291353303_ChangeExamAndResult.cs" />
+    <Compile Include="Migrations\201804291353303_ChangeExamAndResult.Designer.cs">
+      <DependentUpon>201804291353303_ChangeExamAndResult.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbInitializer.cs" />
@@ -297,6 +306,7 @@
     <Content Include="Views\Users\ViewSuccessMessage.cshtml" />
     <Content Include="Views\Test\TestRun.cshtml" />
     <Content Include="Views\Test\ResultOfTest.cshtml" />
+    <Content Include="Views\Lector\ViewLectorCabinet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -347,6 +357,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804271430002_AddExam.resx">
       <DependentUpon>201804271430002_AddExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804291304221_ChangeExam.resx">
+      <DependentUpon>201804291304221_ChangeExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804291353303_ChangeExamAndResult.resx">
+      <DependentUpon>201804291353303_ChangeExamAndResult.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

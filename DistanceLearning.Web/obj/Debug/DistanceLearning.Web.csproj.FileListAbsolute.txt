@@ -80,3 +80,5 @@ A:\1111\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.cs
 A:\1111\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.dll
 A:\1111\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.pdb
 A:\1111\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.AddExam.resources
+A:\1111\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.ChangeExam.resources
+A:\1111\Sigma_Task_team04\DistanceLearning.Web\obj\Debug\DistanceLearning.Web.Migrations.ChangeExamAndResult.resources

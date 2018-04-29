@@ -51,9 +51,38 @@ namespace DistanceLearning.Web.Controllers
 
             user.Courses.Remove(cour);
 
+            //db.SaveChanges();
+
+            //29 04 -удаляем результаты при отписке
+            IEnumerable<Test> tests = db.Tests.Where(j => j.CourseId == Course_id);//вытаскиваем тесты принадлежащие курсу
+            IEnumerable<Result> rez = db.Results.Where(r=>r.UserEmail==this.User.Identity.Name);//вытаскиваем результаты принадлежащие студенту
+
+            foreach(Result r in rez )
+            {
+                //if(r.TestId==tests.Where(t=>t.Id==))
+                bool include = false;
+
+                    foreach(Test t in tests)
+                    {
+                        if (r.TestId == t.Id)
+                        { include = true;
+                        break;
+                        }
+
+                    }
+
+                    if(include)
+                    {
+                    db.Results.Remove(r);
+
+                    }
+
+
+
+
+            }
+
             db.SaveChanges();
-
-
 
 
             return RedirectToAction("Course", "Courses", new { Id = Course_id });

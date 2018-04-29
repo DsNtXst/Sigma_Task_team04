@@ -5,8 +5,11 @@ using System.Web;
 
 namespace DistanceLearning.Web.Models
 {
-    public class Exam :Test
+    public class Exam : Test
     {
-        public bool IsConfirmed { get; set; }
+
+
     }
 }
+
+    

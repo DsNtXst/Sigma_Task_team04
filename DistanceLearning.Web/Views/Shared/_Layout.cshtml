@@ -25,6 +25,10 @@
                     {
                         <li>@Html.ActionLink("Личный кабинет", "ViewUserCourses", "Users")</li>
                     }
+                    @if (this.User.IsInRole("admin"))
+                    {
+                        <li>@Html.ActionLink("Личный кабинет", "ViewLectorCabinet", "Lector")</li>
+                    }
 
                     @if (this.User.Identity.IsAuthenticated)
                     {
