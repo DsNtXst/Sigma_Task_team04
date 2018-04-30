@@ -17,7 +17,8 @@
             <tr>
                 <th scope="col">Курс</th>
                 <th scope="col">Прогресс</th>
-                <th scope="col">Оценка</th>
+                <th scope="col">Оценка(Экзамен)</th>
+                <th scope="col">Статус(Экзамен)</th>
             </tr>
         </thead>
         @foreach (var b in ViewBag.Courses)
@@ -27,7 +28,38 @@
                 <td><a href="../../Courses/Course/@b.Id">@b.Name</a></td>
                  
                 <td>Zero</td>
-                <td>Zero</td>
+                @if (ViewBag.exz_rezults.Peek().Status == 55)
+                {   <td>
+                        <p >не пройден</p>
+                    </td>
+                    <td>
+                         <p>не пройден</p>
+                    </td>
+                    if (ViewBag.exz_rezults.Dequeue() == null) { }//просто удалить
+
+                }
+                else
+                {
+
+                    <td>
+                        <p>@ViewBag.exz_rezults.Peek().Progress</p>
+                    </td>
+                    if (ViewBag.exz_rezults.Peek().Status == 0)
+                    {   <td>
+                            <p>не рассмотрен</p>
+                        </td>}
+                    if (ViewBag.exz_rezults.Peek().Status == 1)
+                    {
+                        <td>
+                            <p style="color:#00ff00">принят</p>
+                        </td>}
+                    if (ViewBag.exz_rezults.Peek().Status == 2)
+                    {
+                        <td>
+                            <p style="color:#ff0000">отклонен</p>
+                        </td>}
+                    if (ViewBag.exz_rezults.Dequeue() == null) { }//просто удалить
+                }
             </tr>
             <!--как вставить?
             <div class="progress">

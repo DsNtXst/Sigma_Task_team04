@@ -110,7 +110,53 @@ namespace DistanceLearning.Web.Controllers
 
             ViewBag.Courses = user.Courses;
 
+            //30 04 результаты
+            IEnumerable < Result > rezults=db.Results.Where(r=>r.UserEmail==this.User.Identity.Name);//все результаты
 
+            IEnumerable<Exam> exams = db.Tests.OfType<Exam>();//cost -все екзамены
+
+            //отделяем екзамены от тестов
+            Queue<Result> exz_rezults = new Queue<Result>();//результаты только екзаменов
+
+            foreach(Course c in user.Courses)//2
+            {
+
+                //Exam ex=c.Tests.OfType<Exam>().FirstOrDefault();//почему то нет связи --тесты равны 0
+
+
+                Exam ex = exams.Where(e => e.CourseId == c.Id).FirstOrDefault();//cost
+                if (ex!=null)
+                {
+                    bool IsExamPassed = false;
+                    foreach(Result r in rezults)
+                    {
+                        if(r.TestId==ex.Id)
+                        {
+                            IsExamPassed = true;
+                            exz_rezults.Enqueue(r);
+                            break;
+
+                        }
+
+                    }
+                    if(!IsExamPassed)
+                    {
+                        Result false_rezult = new Result();
+                        false_rezult.Status = 55;
+                        exz_rezults.Enqueue(false_rezult);
+                      
+
+                    }
+
+                }
+                else { throw new Exception("dd"); }
+
+
+            }
+            
+
+            ViewBag.exz_rezults = exz_rezults;
+            
             return View(/*user.Courses*/);
 
         }
