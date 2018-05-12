@@ -31,3 +31,9 @@ A:\1111\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearn
 A:\1111\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.csproj.CoreCompileInputs.cache
 A:\1111\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.dll
 A:\1111\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.pdb
+A:\222222222222222222\Sigma_Task_team04\DistanceLearning.BusinessLayer\bin\Debug\DistanceLearning.BusinessLayer.dll
+A:\222222222222222222\Sigma_Task_team04\DistanceLearning.BusinessLayer\bin\Debug\DistanceLearning.BusinessLayer.pdb
+A:\222222222222222222\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.csprojResolveAssemblyReference.cache
+A:\222222222222222222\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.csproj.CoreCompileInputs.cache
+A:\222222222222222222\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.dll
+A:\222222222222222222\Sigma_Task_team04\DistanceLearning.BusinessLayer\obj\Debug\DistanceLearning.BusinessLayer.pdb

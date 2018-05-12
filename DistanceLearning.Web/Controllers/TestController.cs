@@ -169,18 +169,28 @@ namespace DistanceLearning.Web.Controllers
         [HttpPost]
         public ActionResult TestRun(string[] answer, string[] curr, int TestId)
         {
-            double oneP = 100.0 / answer.Length;
-            int trueAns = 0;
-            for (int i =0;i<answer.Length;i++)
+            Result R;
+            double oneP;
+            double Result = 100;
+            if (answer != null)//BUG
             {
-                if (answer[i] == curr[i]) trueAns++;
+                oneP = 100.0 / answer.Length;
+
+                int trueAns = 0;
+                for (int i = 0; i < answer.Length; i++)
+                {
+                    if (answer[i] == curr[i]) trueAns++;
+                }
+                Result = trueAns * oneP;
+
+
+
+                R = new Result() { TestId = TestId, UserEmail = User.Identity.Name, Progress = Result, Status = 0 };
             }
-            double Result = trueAns* oneP;
-
-
-
-            Result R = new Result() { TestId = TestId, UserEmail = User.Identity.Name, Progress = Result,Status=0 };
-
+            else
+            {
+                R= new Result() { TestId = TestId, UserEmail = User.Identity.Name, Progress = Result, Status = 0 };
+            }
 
             db.Results.Add(R);
             db.SaveChanges();

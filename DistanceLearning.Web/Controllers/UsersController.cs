@@ -149,7 +149,7 @@ namespace DistanceLearning.Web.Controllers
                     }
 
                 }
-                else { throw new Exception("dd"); }
+                
 
 
             }

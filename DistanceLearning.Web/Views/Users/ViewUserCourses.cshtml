@@ -28,7 +28,9 @@
                 <td><a href="../../Courses/Course/@b.Id">@b.Name</a></td>
                  
                 <td>Zero</td>
-                @if (ViewBag.exz_rezults.Peek().Status == 55)
+                @if (ViewBag.exz_rezults.Count != 0)
+                {
+                if (ViewBag.exz_rezults.Peek().Status == 55)
                 {   <td>
                         <p >не пройден</p>
                     </td>
@@ -59,6 +61,7 @@
                             <p style="color:#ff0000">отклонен</p>
                         </td>}
                     if (ViewBag.exz_rezults.Dequeue() == null) { }//просто удалить
+                }
                 }
             </tr>
             <!--как вставить?
