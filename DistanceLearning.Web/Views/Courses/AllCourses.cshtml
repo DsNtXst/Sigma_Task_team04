@@ -79,6 +79,14 @@
                 <input type="text" id="Search" placeholder="Search" class="form-control" />
             </div>
         </div>
+        <ul>
+            @foreach (var b in Model)
+            {
+                <li class="Search"><a class="btn-class" href="../../Courses/Course/@b.Id">@b.Name</a></li>
+
+            }
+        </ul>
+
         <div class="name_content">
             <p align="center">My Courses</p>
             <a class="btn btn-primary" href="../../Courses/Add"><b>Add Course</b></a>
@@ -133,7 +141,7 @@
                   $('.mov').each(function () {
                       var imagePos = $(this).offset().top;
                       var topOfWindow = $(window).scrollTop();
-                      if (imagePos < topOfWindow + 700) {
+                      if (imagePos < topOfWindow + 1000) {
                           $(this).addClass('zoomIn');
                       }
                   });

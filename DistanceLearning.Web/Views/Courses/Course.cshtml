@@ -16,7 +16,6 @@
         <div class="row-fluid">
             <div class="head_text">
                 <h1>@Html.DisplayFor(model => model.Name)</h1>
-                <div class="btn-group">
                     @if (this.User.IsInRole("admin"))
             {
                 using (Html.BeginForm("Delete", "Courses", FormMethod.Post))
@@ -27,10 +26,10 @@
                                 <input type="hidden" name="Id" value="@Model.Id" />
                                 <input class="btn btn-danger" type="submit" value="Delete" />
                             </div>
+                            <br />
                         }
                     }
-                </div>
-                <div class="btn-group">
+
                     @if (this.User.IsInRole("admin"))
             {
                 using (Html.BeginForm("Edit", "Courses", FormMethod.Get))
@@ -39,11 +38,9 @@
                             <input class="btn btn-primary" type="submit" value="Edit" />
                         }
                     }
-                </div>
-                <div class="btn-group">
                     @if (this.User.IsInRole("user"))
             {
-                if (@ViewBag.IsSubcribe == true)
+                if (ViewBag.IsSubcribe == true)
                 {
                             <div class="alert alert-success" role="alert">
                                 You are subscribed to the course
@@ -52,38 +49,27 @@
                             using (Html.BeginForm("LeaveCourse", "Users", FormMethod.Post))
                             {
                                 <input type="hidden" name="Course_id" value="@Model.Id" />
-                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok-circle"></span>  Unsubscribe</button>
-                                @*<span class="glyphicon glyphicon-ok-circle"></span><input class="btn btn-primary btn-sm " type="submit" value="Unsubscribe" />*@
+                                <input class="btn btn-primary" type="submit" value="Unsubscribe" />
                             }
 
                         }
-
                         else
                         {
                             using (Html.BeginForm("SubscribeOnCourse", "Users", FormMethod.Post))
                             {
                                 <input type="hidden" name="Course_id" value="@Model.Id" />
-                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok-circle"></span>  Subscribe</button>
-                                @*<span class="glyphicon glyphicon-ok-circle"></span><input class="btn btn-primary btn-sm " type="submit" value="Subscribe" />*@
+                                <input class="btn btn-primary" type="submit" value="Subscribe" />
                             }
                         }
                     }
+
+
+                <p>Hours @Html.DisplayFor(model => model.Hours)</p>
                 </div>
-
-
-
-                <p>
-                    Hours:
-                    @Html.DisplayFor(model => model.Hours)
-                </p>
-            </div>
-        </div>
-        <div class="list_lesson">
-
-            <h2>Lessons</h2>
-            <div class="btn-group">
+            <div class="list_lesson">
+                <h2>Lessons</h2>
                 @foreach (var item in Model.Lessons)
-                {
+            {
 
 
                     @Html.DisplayFor(modelItem => item.Name)
@@ -91,9 +77,8 @@
                     <!--
                     <h7>[Html.RouteLink("Подробнее", new { controller = "Lesson", action = "ViewLessonAbout", Id = item.Id })
                     ]</h7>-->
-                    <br />
-                    <a class="label label-primary" href="/Lesson/ViewLessonAbout?id_lesson=@item.Id">
-                        Learn More
+                    <a class="btn btn-primary" href="/Lesson/ViewLessonAbout?id_lesson=@item.Id">
+                        Lesrn More
                     </a>
                     <br />
                     if (this.User.IsInRole("admin"))
@@ -101,42 +86,108 @@
                         using (Html.BeginForm("Delete", "Lesson", FormMethod.Post))
                         {
                             <input type="hidden" name="id_lesson" value="@item.Id" />
-                            <input class="btn btn-sm btn-danger delete" type="submit" value="Delete" /><br />
+                            <input class="btn btn-danger" type="submit" value="Delete" />
                         }
                     }
                 }
-            </div>
-        </div>
-        <div class="list_test">
+                </div>
+            <div class="list_test">
+                <fieldset>
 
-            <h2>Tests</h2>
-            <div class="btn-group">
-                @foreach (var item in ViewBag.Tests)
+                    <legend>Tests</legend>
+                    @foreach (Test item in ViewBag.Tests)
+                    {
+                        if (!(item.GetType().ToString()).Contains("Exam"))
+                        {<p>@item.Name</p>
+
+                            if (this.User.IsInRole("admin"))
+                            {
+                                <a class="btn btn-primary" href="/Test/ViewTestAbout?id_test=@item.Id">
+                                    Learn More
+                                </a>
+                                using (Html.BeginForm("Delete", "Test", FormMethod.Post))
+                                {
+                                    <input type="hidden" name="id_test" value="@item.Id" />
+                                    <input class="btn btn-danger" type="submit" value="Delete" />
+                                }
+                            }
+                            if (this.User.IsInRole("user") && ViewBag.IsSubcribe)
+                            {
+                                //28 04
+                                if (((List<int>)ViewBag.id_passed_tests).Where(i => i == item.Id).FirstOrDefault() == item.Id)
+                                {
+
+                                    <p style="color:#00ff00">Test passed</p>
+
+                                }
+                                else
+                                {
+                                    <a class="btn btn-primary" href="/Test/TestRun?id_test=@item.Id">
+                                        Pass the
+                                    </a>
+                                }
+
+
+                            }
+                        }
+
+                    }
+                </fieldset>
+                <br/>
+                <!--27 04-->
+
+                <fieldset>
+
+                    <legend>Exam</legend>
+
+                    @foreach (var m in ViewBag.Exam)
+            {
+                if (@ViewBag.Exam != null)
                 {
+                            <p>@m.Name</p>
 
-                    <p>@item.Name</p>
+                            if (this.User.IsInRole("admin"))
+                            {
+                                <a class="btn btn-primary" href="/Test/ViewTestAbout?id_test=@m.Id">
+                                    Learn More
+                                </a>
+                                using (Html.BeginForm("Delete", "Test", FormMethod.Post))
+                                {
+                                    <input type="hidden" name="id_test" value="@m.Id" />
+                                    <input class="btn btn-danger" type="submit" value="Delete" />
+                                }
+                            }
+                            if (this.User.IsInRole("user") && ViewBag.IsSubcribe)
+                            {
+                                if (ViewBag.Ability)
+                                {
+                                    <a class="btn btn-primary" href="/Test/TestRun?id_test=@m.Id">
+                                        Pass the
+                                    </a>
+                                }
+                                else
+                                {
+                                    if (ViewBag.ExamPassed)
+                                    {
 
-                    if (this.User.IsInRole("admin"))
-                    {
-                        <a class="label label-primary" href="/Test/ViewTestAbout?id_test=@item.Id">
-                            Learn More
-                        </a>
-                        using (Html.BeginForm("Delete", "Test", FormMethod.Post))
-                        {
-                            <input type="hidden" name="id_test" value="@item.Id" />
-                            <input class="btn btn-sm btn-danger" type="submit" value="Delete" />
+                                        <p style="color:#00ff00">Exam passed</p>
+
+                                    }
+                                    else
+                                    {
+
+                                        <p style="color:#ff0000">Pass (not available)</p>
+
+                                    }
+                                }
+                            }
                         }
                     }
-                    if (this.User.IsInRole("user"))
-                    {
-                        <a class="label label-primary" href="/Test/TestRun?id_test=@item.Id">
-                            Pass the
-                        </a>
-                    }
-                }
+
+                </fieldset>
             </div>
-        </div>
-    </div>
+            </div>
+</div>
 </body>
 </html>
 
