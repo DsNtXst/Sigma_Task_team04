@@ -27,7 +27,16 @@
             <tr>
                 <td><a href="../../Courses/Course/@b.Id">@b.Name</a></td>
                  
-                <td>Zero</td>
+                <td>
+                    @if (ViewBag.persents_passed.Count != 0)
+                    {
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: @ViewBag.persents_passed.Peek()%;" aria-valuenow=@ViewBag.persents_passed.Peek() aria-valuemin="0" aria-valuemax="100">@ViewBag.persents_passed.Peek()%</div>
+                        </div>
+                        if (ViewBag.persents_passed.Dequeue() == 0) { }//просто удалить
+                    }
+                </td>
                 @if (ViewBag.exz_rezults.Count != 0)
                 {
                 if (ViewBag.exz_rezults.Peek().Status == 55)

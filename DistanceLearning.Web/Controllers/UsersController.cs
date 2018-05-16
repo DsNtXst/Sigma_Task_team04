@@ -153,8 +153,57 @@ namespace DistanceLearning.Web.Controllers
 
 
             }
-            
 
+
+            //16 05 работа с progressbar- для ясности делаем отдельный перебор
+            Queue<double> persents_passed = new Queue<double>();
+            foreach (Course c in user.Courses)
+            {
+
+                //int count_of_tests = c.Lessons.Count;//правильно ?
+
+
+                int count_of_tests = 0;
+
+
+                int count_passed = 0;
+
+                foreach (Test t in db.Tests.Where(t => t.CourseId == c.Id))
+                {
+                    count_of_tests++;
+                    bool ispassed = false;
+                    foreach (Result r in rezults)
+                    {
+                        if (r.TestId == t.Id)
+                        {
+
+                            ispassed = true;
+                            break;
+
+                        }
+
+                    }
+                    if(ispassed)
+                    {
+
+                        count_passed++;
+
+                    }
+
+                }
+
+
+                double persent=0;
+                if (count_of_tests != 0)
+                    persent = Math.Round((double)((double)(count_passed) / (double)(count_of_tests)*100));
+
+                persents_passed.Enqueue(persent);
+
+
+            }
+
+
+            ViewBag.persents_passed = persents_passed;
             ViewBag.exz_rezults = exz_rezults;
             
             return View(/*user.Courses*/);
