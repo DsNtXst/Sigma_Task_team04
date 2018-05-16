@@ -3,7 +3,6 @@
     ViewBag.Title = "О тесте";
 }
 @model DistanceLearning.Web.Models.Test
-<h2>О тесте</h2>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,17 +34,15 @@
                         <legend>Questions</legend>
                         @foreach (var item in ViewBag.Questions)
                         {
-                            <ul>
-                                <li>
+                            <p>
                                     @item.Task
                                     @using (Html.BeginForm("DeleteQ", "Test", FormMethod.Post))
                                     {
                                         <input type="hidden" name="id_question" value="@item.Id" />
-                                        <input style="text-align:center" class="btn btn-danger" type="submit" value="Delete" />
+                                        <input  class="btn btn-danger" type="submit" value="Delete" />
                                     }
 
-                                </li>
-                            </ul>
+                             </p>
                         }
 
                     </fieldset>
@@ -58,7 +55,7 @@
                     using (Html.BeginForm("ViewTestEdit", "Test", FormMethod.Post))
                     {
                         <input type="hidden" name="id_test" value="@Model.Id" />
-                        <input tyle="text-align:center" class="btn btn-primary" type="submit" value="Edit" />
+                        <input class="btn btn-primary" type="submit" value="Edit" />
                     }
                 }
             </div>

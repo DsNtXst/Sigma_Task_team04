@@ -6,6 +6,7 @@
     font-size:20px;
     padding-top:30px;
     padding-bottom:20px;
+    box-shadow:rgba(0, 0, 0, 1) 0 0 10px;
 }
 .list_lesson{
     background-color:#ffffff;
@@ -28,10 +29,6 @@
     padding-bottom:20px;
     box-shadow:rgba(0, 0, 0, 1) 0 0 10px;
 }
-h1,h2,h3,h4,h5,h6{
-    font: bold;
-    font-family:'Poiret One',cursive;
-}
 .test_head{
     background-color:#ffffff;
     color:#222222;
@@ -47,4 +44,7 @@ textarea{
     margin-left:50%;
     text-align:left;
 
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:'Poiret One',cursive;
 }
