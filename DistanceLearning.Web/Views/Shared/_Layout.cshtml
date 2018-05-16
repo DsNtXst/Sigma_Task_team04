@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <title>@ViewBag.Title – приложение ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -11,7 +12,7 @@
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header" style="font-family:'Poiret One',cursive;">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -23,21 +24,21 @@
                 <ul class="nav navbar-nav navbar-right">
                     @if (this.User.IsInRole("user"))
                     {
-                        <li>@Html.ActionLink("Личный кабинет", "ViewUserCourses", "Users")</li>
+                        <li>@Html.ActionLink("Personal Area", "ViewUserCourses", "Users")</li>
                     }
                     @if (this.User.IsInRole("admin"))
                     {
-                        <li>@Html.ActionLink("Личный кабинет", "ViewLectorCabinet", "Lector")</li>
+                        <li>@Html.ActionLink("Personal Area", "ViewLectorCabinet", "Lector")</li>
                     }
 
                     @if (this.User.Identity.IsAuthenticated)
                     {
-                    <li>@Html.ActionLink("Выйти", "Logout", "Account")</li>
+                    <li>@Html.ActionLink("Exit", "Logout", "Account")</li>
                     }
                     else
                     {
 
-                        <li>@Html.ActionLink("Вход", "Login", "Account")</li>
+                        <li>@Html.ActionLink("Sing In", "Login", "Account")</li>
 
                     }
 

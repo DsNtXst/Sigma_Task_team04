@@ -5,28 +5,36 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 <body>
-    <link rel="stylesheet" href="~/Content/CourseInfo.css">
-    <link rel="stylesheet" href="~/Content/TextBox.css">
-    <br />
-    <p><b>@ViewBag.OneLesson.Name</b></p>
-    <a href="/Courses/Course/@ViewBag.OneLesson.CourseId">
-        Назад к курсу
-    </a>
-    <!--TEST-->
-    <!--<p>@ViewBag.OneLesson.Information</p>-->
-    <p>@Html.Raw(ViewBag.OneLesson.Information)</p>
-    <!--Переход на редактирование-->
-    @if (this.User.IsInRole("admin"))
-    {
-        using (Html.BeginForm("ViewLessonEdit", "Lesson", FormMethod.Post))
-        {
-             <input type="hidden" name="id_lesson" value="@ViewBag.OneLesson.Id" />
-              <input class="input-style" type="submit" value="Редактировать" />
+    <div class="container">
+        <div class="row-fluid">
+            <div class="head_text">
+                <h1>@ViewBag.OneLesson.Name</h1>
 
-        }
-    }
+                <a class="btn btn-primary" href="/Courses/Course/@ViewBag.OneLesson.CourseId">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <b>Back to Course</b>
+                </a>
+            </div>
+            <!--TEST-->
+            <!--<p>@ViewBag.OneLesson.Information</p>-->
+            <p>@Html.Raw(ViewBag.OneLesson.Information)</p>
+            <!--Переход на редактирование-->
+            @if (this.User.IsInRole("admin"))
+            {
+                using (Html.BeginForm("ViewLessonEdit", "Lesson", FormMethod.Post))
+                {
+                    <input type="hidden" name="id_lesson" value="@ViewBag.OneLesson.Id" />
+                    <input class="btn btn-primary" type="submit" value="Edit" />
+
+                }
+            }
+        </div>
+    </div>
 </body>
 </html>
 

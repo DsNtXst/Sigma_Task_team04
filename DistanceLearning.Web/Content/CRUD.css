@@ -1,0 +1,13 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+.head_page{
+    background-color:#222222;
+    color:#ffffff;
+    text-align:center;
+    font-family:'Poiret One',cursive;
+    font-size:20px;
+    padding-top:50px;
+    padding-bottom:20px;
+}

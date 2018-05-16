@@ -6,35 +6,41 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/CRUD.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 <body>
-    <link rel="stylesheet" href="~/Content/TextBox.css">
     <div class="container">
-        <p align="center"><font size="7"><font face="Times New Roman, Times, serif"><b>Редактирование курса</b></font></font></p>
-        @using (Html.BeginForm("Edit", "Courses", FormMethod.Post))
-    {
-        <input type="hidden" name="Id" value="@Model.Id" />
-        <input type="hidden" name="LectorEmail" value="@Model.LectorEmail" />
-        <p>Название курса&ensp;@Html.EditorFor(Model => Model.Name, new { htmlAttributes = new { @class = "input-style" } })</p>
-        <p>Количество часов&ensp;@Html.EditorFor(Model => Model.Hours, new { htmlAttributes = new { @class = "input-style" } })</p>
-        <input class="btn btn-success" type="submit" value="Сохранить" />
-}
-        <br />
-        <div class="btn-group">
-            @using (Html.BeginForm("ViewLessonAdd", "Lesson", FormMethod.Post))
+        <div class="row-fluid">
+            <div class="head_page">
+                <h1>Редактирование курса</h1>
+                @using (Html.BeginForm("Edit", "Courses", FormMethod.Post))
+                {
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <input type="hidden" name="LectorEmail" value="@Model.LectorEmail" />
+                    <p style="margin-left:28px;">Course name&ensp;@Html.EditorFor(Model => Model.Name, new { htmlAttributes = new { @class = "input-style" } })</p>
+                    <p>Number of hours&ensp;@Html.EditorFor(Model => Model.Hours, new { htmlAttributes = new { @class = "input-style" } })</p>
+                    <input class="btn btn-success" type="submit" value="Save" />
+                }
+                <br />
+                <div class="btn-group">
+                    @using (Html.BeginForm("ViewLessonAdd", "Lesson", FormMethod.Post))
             {
-                <input type="hidden" name="Id_course" value="@Model.Id" />
-                <input class="btn" type="submit" value="Добавить урок" />
-            }
-        </div>
-        <div class="btn-group">
-        @using (Html.BeginForm("ViewTestAdd", "Test", FormMethod.Post))
-    {
-        <input type="hidden" name="Id_course" value="@Model.Id" />
-        <input class="btn" type="submit" value="Добавить тест" />
+                        <input type="hidden" name="Id_course" value="@Model.Id" />
+                        <input class="btn btn-primary" type="submit" value="Add Lesson" />
+                    }
+                </div>
+                <div class="btn-group">
+                    @using (Html.BeginForm("ViewTestAdd", "Test", FormMethod.Post))
+                    {
+                        <input type="hidden" name="Id_course" value="@Model.Id" />
+                        <input class="btn btn-primary" type="submit" value="Add Test" />
 
-    }
+                    }
+                </div>
             </div>
+        </div>
     </div>
 </body>
 </html>

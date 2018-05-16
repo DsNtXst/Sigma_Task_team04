@@ -7,82 +7,87 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="../Content/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/CourseInfo.css" />
 </head>
 <body>
-    
-    <br>
-    <h2>Курсы на которые я подписан</h2>
-    <table class="table">
-        <thead class="thead-dark">
-            <tr>
-                <th scope="col">Курс</th>
-                <th scope="col">Прогресс</th>
-                <th scope="col">Оценка(Экзамен)</th>
-                <th scope="col">Статус(Экзамен)</th>
-            </tr>
-        </thead>
-        @foreach (var b in ViewBag.Courses)
-        {
-        <tbody>
-            <tr>
-                <td><a href="../../Courses/Course/@b.Id">@b.Name</a></td>
-                 
-                <td>
-                    @if (ViewBag.persents_passed.Count != 0)
-                    {
+       <div class="head_text">
+        <img src="~/img/person.jpg" />
+        <h1>Personal Area</h1>
+    </div>
+    <div class="list_lesson">
+        <h2>I signed the courses</h2>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Course</th>
+                    <th scope="col">Progress</th>
+                    <th scope="col">Marc(Exem)</th>
+                    <th scope="col">Status (Exam)</th>
+                </tr>
+            </thead>
+            @foreach (var b in ViewBag.Courses)
+            {
+                <tbody>
+                    <tr>
+                        <td><a href="../../Courses/Course/@b.Id">@b.Name</a></td>
 
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: @ViewBag.persents_passed.Peek()%;" aria-valuenow=@ViewBag.persents_passed.Peek() aria-valuemin="0" aria-valuemax="100">@ViewBag.persents_passed.Peek()%</div>
-                        </div>
-                        if (ViewBag.persents_passed.Dequeue() == 0) { }//просто удалить
-                    }
-                </td>
-                @if (ViewBag.exz_rezults.Count != 0)
-                {
-                if (ViewBag.exz_rezults.Peek().Status == 55)
-                {   <td>
-                        <p >не пройден</p>
-                    </td>
-                    <td>
-                         <p>не пройден</p>
-                    </td>
-                    if (ViewBag.exz_rezults.Dequeue() == null) { }//просто удалить
-
-                }
-                else
-                {
-
-                    <td>
-                        <p>@ViewBag.exz_rezults.Peek().Progress</p>
-                    </td>
-                    if (ViewBag.exz_rezults.Peek().Status == 0)
-                    {   <td>
-                            <p>не рассмотрен</p>
-                        </td>}
-                    if (ViewBag.exz_rezults.Peek().Status == 1)
-                    {
                         <td>
-                            <p style="color:#00ff00">принят</p>
-                        </td>}
-                    if (ViewBag.exz_rezults.Peek().Status == 2)
-                    {
-                        <td>
-                            <p style="color:#ff0000">отклонен</p>
-                        </td>}
-                    if (ViewBag.exz_rezults.Dequeue() == null) { }//просто удалить
-                }
-                }
-            </tr>
-            <!--как вставить?
-            <div class="progress">
-                     <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                 </div>-->
-            
-        </tbody>
-        }
-    </table>
+                            @if (ViewBag.persents_passed.Count != 0)
+                            {
+
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: @ViewBag.persents_passed.Peek()%;" aria-valuenow=@ViewBag.persents_passed.Peek() aria-valuemin="0" aria-valuemax="100">@ViewBag.persents_passed.Peek()%</div>
+                                </div>
+                                if (ViewBag.persents_passed.Dequeue() == 0) { }//просто удалить
+                            }
+                        </td>
+                        @if (ViewBag.exz_rezults.Count != 0)
+                        {
+                            if (ViewBag.exz_rezults.Peek().Status == 55)
+                            {
+                                <td>
+                                    <p>Not passed</p>
+                                </td>
+                                <td>
+                                    <p>Not passed</p>
+                                </td>
+                                if (ViewBag.exz_rezults.Dequeue() == null) { }//просто удалить
+
+                            }
+                            else
+                            {
+
+                                <td>
+                                    <p>@ViewBag.exz_rezults.Peek().Progress</p>
+                                </td>
+                                if (ViewBag.exz_rezults.Peek().Status == 0)
+                                {
+                                    <td>
+                                        <p>Not considered</p>
+                                    </td>}
+                                if (ViewBag.exz_rezults.Peek().Status == 1)
+                                {
+                                    <td>
+                                        <p style="color:#00ff00">Accepted</p>
+                                    </td>}
+                                if (ViewBag.exz_rezults.Peek().Status == 2)
+                                {
+                                    <td>
+                                        <p style="color:#ff0000">Rejected</p>
+                                    </td>}
+                                if (ViewBag.exz_rezults.Dequeue() == null) { }//просто удалить
+                            }
+                        }
+                    </tr>
+                </tbody>
+            }
+        </table>
+        </div>
 </body>
 </html>
+
+
+
 
 
 

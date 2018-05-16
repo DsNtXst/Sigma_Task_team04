@@ -6,38 +6,48 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 <body>
-    <link rel="stylesheet" href="~/Content/CourseInfo.css">
-    <link rel="stylesheet" href="~/Content/TextBox.css">
-    <br />
-    <p>Редактирование теста @ViewBag.OneTest.Name</p>
-    <a href="/Test/ViewTestAbout?id_test=@ViewBag.OneTest.Id">
-        Назад к тесту
-    </a>
-    @using (Html.BeginForm("Update", "Test", FormMethod.Post))
-    {
-        <input type="hidden" name="Id" value="@ViewBag.OneTest.Id" />
-        <p>
-            <input type="text" name="Name" class="input-style" value="@ViewBag.OneTest.Name" /><br />
-        </p>
-        <p>
-            <input type="text" name="CountQuestions" value="@ViewBag.OneTest.CountQuestions" />
-        </p>
-        <p>
-            <input class="input-style" type="submit" value="Сохранить изменения" />
-        </p>
+    <div class="container">
+        <div class="row-fluid">
+            <div class="head_text">
+                <h1> @ViewBag.OneTest.Name</h1>
+                <a class="btn btn-primary" href="/Test/ViewTestAbout?id_test=@ViewBag.OneTest.Id">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <b>Back to Test</b>
+                </a>
+            </div>
+            <div class="list_test">
+                @using (Html.BeginForm("Update", "Test", FormMethod.Post))
+                {
+                    <input type="hidden" name="Id" value="@ViewBag.OneTest.Id" />
+                    <p>
+                        <input type="text" name="Name" class="input-style" value="@ViewBag.OneTest.Name" /><br />
+                    </p>
+                    <p>
+                        <input type="text" name="CountQuestions" value="@ViewBag.OneTest.CountQuestions" />
+                    </p>
+                    <p>
+                        <input class="btn btn-success" type="submit" value="Save changes" />
+                    </p>
 
-    }
+                }
 
-    @using (Html.BeginForm("ViewTestAddQuest", "Test", FormMethod.Post))
-    {
-        <input type="hidden" name="id_test" value="@ViewBag.OneTest.Id" />
-        <input class="input-style" type="submit" value="Добавить вопросы" />
+                @using (Html.BeginForm("ViewTestAddQuest", "Test", FormMethod.Post))
+                {
+                    <input type="hidden" name="id_test" value="@ViewBag.OneTest.Id" />
+                    <input class="btn btn-primary" type="submit" value="Add Questions" />
 
-    }
-    <!--test-->
+                }
+                <!--test-->
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
+
 

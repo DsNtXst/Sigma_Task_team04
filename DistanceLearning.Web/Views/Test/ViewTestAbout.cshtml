@@ -8,59 +8,64 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 <body>
-    <link rel="stylesheet" href="~/Content/CourseInfo.css">
-    <link rel="stylesheet" href="~/Content/TextBox.css">
-    <br />
-    <p>
-        <a href="/Courses/Course/@Model.CourseId">
-            Назад к курсу
-        </a>
-    </p>
+    <div class="container">
+        <div class="row-fluid">
+            <div class="head_text">
+                <h1>@Html.DisplayFor(model => model.Name)</h1>
+                <a class="btn btn-primary" href="/Courses/Course/@Model.CourseId">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <b>Back to Course</b>
+                </a>
 
-    <h7 align="left"><font size="8"><font face="Times New Roman, Times, serif"><b>@Html.DisplayFor(model => model.Name)</b></font></font></h7>
-
-    <!--TEST-->
-    <p><h3>Кол-во вопросов</h3></p>
-    <h7>@ViewData["ques"]</h7>
-    <p><h3>Время на выполнение</h3></p>
-    <p>@Html.DisplayFor(model => model.Time)</p>
-
-
-    @if (this.User.IsInRole("admin"))
-    {
-        <fieldset>
-            <legend>Вопросы</legend>
-            @foreach (var item in ViewBag.Questions)
-            {
-                <ul>
-                    <li>
-                        @item.Task
-                        @using (Html.BeginForm("DeleteQ", "Test", FormMethod.Post))
+                <!--TEST-->
+                <p><h3>Number of questions</h3></p>
+                <h7>@ViewData["ques"]</h7>
+                <p><h3>Time to perform</h3></p>
+                <p>@Html.DisplayFor(model => model.Time)</p>
+            </div>
+            <div class="list_test">
+                @if (this.User.IsInRole("admin"))
+                {
+                    <fieldset>
+                        <legend>Questions</legend>
+                        @foreach (var item in ViewBag.Questions)
                         {
-                            <input type="hidden" name="id_question" value="@item.Id" />
-                            <input class="input-style" type="submit" value="УДАЛИТЬ" />
+                            <ul>
+                                <li>
+                                    @item.Task
+                                    @using (Html.BeginForm("DeleteQ", "Test", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id_question" value="@item.Id" />
+                                        <input style="text-align:center" class="btn btn-danger" type="submit" value="Delete" />
+                                    }
+
+                                </li>
+                            </ul>
                         }
 
-                    </li>
-                </ul>
-            }
+                    </fieldset>
 
-        </fieldset>
+                }
 
-    }
-
-    @if (this.User.IsInRole("admin"))
-    {
+                @if (this.User.IsInRole("admin"))
+                {
         <!--Переход на редактирование-->
-            using (Html.BeginForm("ViewTestEdit", "Test", FormMethod.Post))
-            {
-                <input type="hidden" name="id_test" value="@Model.Id" />
-                <input class="input-style" type="submit" value="Редактировать" />
-            }
-    }
-    
+                    using (Html.BeginForm("ViewTestEdit", "Test", FormMethod.Post))
+                    {
+                        <input type="hidden" name="id_test" value="@Model.Id" />
+                        <input tyle="text-align:center" class="btn btn-primary" type="submit" value="Edit" />
+                    }
+                }
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
 

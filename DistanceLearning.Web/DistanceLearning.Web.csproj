@@ -251,12 +251,14 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Course.css" />
     <Content Include="Content\CourseInfo.css" />
+    <Content Include="Content\CRUD.css" />
     <Content Include="Content\login.css" />
-    <Content Include="Content\TextBox.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\person.jpg" />
+    <Content Include="img\picture.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">

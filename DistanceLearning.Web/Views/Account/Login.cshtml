@@ -5,36 +5,54 @@
     }
     <!DOCTYPE html>
     <html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="~/Content/login.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6 level_1">
+                <div class="level_2">
+                    <div class="level_3">
+                        <div class="level_4">
+                            <img src="~/img/picture.png" width="363" height="341" />
+                        </div>
+                        <div class="level_text">
+                            <p>Distance Learning</p>
+                            <hr />
+                            <div class="registration-block">
+                                <div class="enter">
+                                    <p>Sign In</p>
+                                </div>
+                                <div class="inputValues">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="~/Content/login.css" />
-    </head>
-    <body>
-        <div class="background">
-            <div class="logo">Distance Learning</div>
-            <div class="registration-block">
-                <div class="enter">
-                    <h1>Вход</h1>
-                </div>
+                                    @using (Html.BeginForm())
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        @Html.ValidationSummary()
+                                        <div class="input-group">
+                                            <input type="hidden" name="returnUrl" value="@ViewBag.returnUrl" />
+                                            @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "input", @placeholder = "E-mail" } })
+                                            @Html.EditorFor(m => m.Password, new { htmlAttributes = new { @class = "input", @placeholder = "Password" } })
+                                        </div>
+                                        <input type="submit" value="Sign In" class="btn btn-primary">
+                                    }
 
-                <div class="inputValues">
-                    @using (Html.BeginForm())
-                    {
-                        @Html.AntiForgeryToken()
-                        @Html.ValidationSummary()
-                        <input type="hidden" name="returnUrl" value="@ViewBag.returnUrl" />
-                        @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "input", @placeholder = "E-mail" } })
-                        @Html.EditorFor(m => m.Password, new { htmlAttributes = new { @class = "input", @placeholder = "Password" } })
-                        <input type="submit" value="Войти в систему" class="btn">
-                    }
-                    <form>
-                        <input type="button" value="Зарегистрироваться" class="btn" onClick='location.href="../../Account/Register"'>
-                    </form>
+                                    <input type="button" value="Sign Up" class="btn btn-success" onClick='location.href="../../Account/Register"'>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
-    </html>
+    </div>
+</body>
+</html>
 

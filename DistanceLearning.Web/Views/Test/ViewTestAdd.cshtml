@@ -8,53 +8,61 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 <body>
-    <link rel="stylesheet" href="~/Content/CourseInfo.css">
-    <link rel="stylesheet" href="~/Content/TextBox.css">
-    <br />
-    <p>Добавление теста в курс №@ViewBag.Name</p>
-    <a href="/Courses/Course/@ViewBag.Id_course">
-        Назад к курсу
-    </a>
+    <div class="container">
+        <div class="row-fluid">
+            <div class="head_text">
+                <h1>Добавление теста в курс @ViewBag.Name</h1>
+                <a class="btn btn-primary" href="/Courses/Course/@ViewBag.Id_course">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <b>Back to Course</b>
+                </a>
+            </div>
+            <div class="list_lesson">
+                @using (Html.BeginForm("Add", "Test", FormMethod.Post))
+                {
+                    <input type="hidden" name="CourseId" value="@ViewBag.Id_course" />
+                    <fieldset>
+                        <p>
+                            Enter the name<br />
+                            <input class="input-style" type="text" name="Name" /><br />
+                        </p>
+                        <!--<input type="text" name="Information" />-->
+                        <p>
+                            Enter the time<br />
+                            <input class="input-style" type="text" name="Time" /><br />
+                        </p>
+                        @*<p>
+                                Введите кол-во вопросов<br />
+                                <input class="input-style" type="text" name="CountQuestions" /><br />
+                            </p>*@
 
 
-    @using (Html.BeginForm("Add", "Test", FormMethod.Post))
-    {
-        <input type="hidden" name="CourseId" value="@ViewBag.Id_course" />
-        <fieldset>
-            <p>
-                Введите имя теста<br />
-                <input class="input-style" type="text" name="Name" /><br />
-            </p>
-            <!--<input type="text" name="Information" />-->
-            <p>
-                Введите время<br />
-                <input class="input-style" type="text" name="Time" /><br />
-            </p>
-            @*<p>
-                    Введите кол-во вопросов<br />
-                    <input class="input-style" type="text" name="CountQuestions" /><br />
-                </p>*@
+                        <!--27/4-->
+                        @if (ViewBag.OneMoreExam)//условие добавления только одного екзамена
+                        {<input name="isExam" type="checkbox" value="false" /><a>Make an exam</a> <br />
+                        }
+                        else
+                        {
+                            <p>Exam already exists</p><br />
+
+                        }
+
+                        <input class="btn btn-success" type="submit" value="Add" />
+
+                    </fieldset>
 
 
-            <!--27/4-->
-            @if (ViewBag.OneMoreExam)//условие добавления только одного екзамена
-            {<input  name="isExam" type="checkbox" value="false" /><a>Сделать экзаменом</a> <br/>
-            }
-            else
-            {
-                <p>не могу сделать экзаменом-уже один есть</p><br />
 
-            }
+                }
+            </div>
+        </div>
+    </div>
 
-            <input class="input-style" type="submit" value="Добавить" />
-
-        </fieldset>
-        
-
-
-    }
     <!--test-->
 
 </body>

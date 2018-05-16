@@ -8,73 +8,79 @@
     ViewBag.Title = "TestRun";
 }
 
-<h2>TestRun</h2>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/CourseInfo.css" />
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+</head>
 <body>
-    <link rel="stylesheet" href="~/Content/CourseInfo.css">
-    <link rel="stylesheet" href="~/Content/TextBox.css">
+    <div class="head_text">
+        <h2>TestRun</h2>
+    </div>
+    <div class="test">
 
-    @using (Html.BeginForm("TestRun", "Test", FormMethod.Post))
-    {
-        int r = 0;
-        foreach (var item in ViewBag.Questions)
+        @using (Html.BeginForm("TestRun", "Test", FormMethod.Post))
         {
-            string tr = @item.TrueAnswer;
-            string current = string.Empty;
+            int r = 0;
+            foreach (var item in ViewBag.Questions)
+            {
+                string tr = @item.TrueAnswer;
+                string current = string.Empty;
 
-            var N = new Random();
-            string[] mas = new string[4];
-            mas[0] = @item.WrongAnswer1;
-            mas[1] = @item.WrongAnswer2;
-            mas[2] = @item.WrongAnswer3;
-            mas[3] = @item.TrueAnswer;
-
-
-            int i = mas.Length - 1;
-            int j = N.Next(i + 1);
-
-            string tmp = mas[j];
-            mas[j] = mas[i];
-            if (mas[j] == tr) current = "a" +(j + 1).ToString();
-            mas[i] = tmp;
-            if (mas[i] == tr) current = "a" + (i + 1).ToString();
-            i--;
-            j = N.Next(i + 1);
-            tmp = mas[j];
-            mas[j] = mas[i];
-            if (mas[j] == tr) current = "a" + (j + 1).ToString();
-            mas[i] = tmp;
-            if (mas[i] == tr) current = "a" + (i + 1).ToString();
-            i--;
-            j = N.Next(i + 1);
-            tmp = mas[j];
-            mas[j] = mas[i];
-            if (mas[j] == tr) current = "a" + (j + 1).ToString();
-            mas[i] = tmp;
-            if (mas[i] == tr) current = "a" + (i + 1).ToString();
+                var N = new Random();
+                string[] mas = new string[4];
+                mas[0] = @item.WrongAnswer1;
+                mas[1] = @item.WrongAnswer2;
+                mas[2] = @item.WrongAnswer3;
+                mas[3] = @item.TrueAnswer;
 
 
+                int i = mas.Length - 1;
+                int j = N.Next(i + 1);
+
+                string tmp = mas[j];
+                mas[j] = mas[i];
+                if (mas[j] == tr) current = "a" + (j + 1).ToString();
+                mas[i] = tmp;
+                if (mas[i] == tr) current = "a" + (i + 1).ToString();
+                i--;
+                j = N.Next(i + 1);
+                tmp = mas[j];
+                mas[j] = mas[i];
+                if (mas[j] == tr) current = "a" + (j + 1).ToString();
+                mas[i] = tmp;
+                if (mas[i] == tr) current = "a" + (i + 1).ToString();
+                i--;
+                j = N.Next(i + 1);
+                tmp = mas[j];
+                mas[j] = mas[i];
+                if (mas[j] == tr) current = "a" + (j + 1).ToString();
+                mas[i] = tmp;
+                if (mas[i] == tr) current = "a" + (i + 1).ToString();
 
 
 
-            string d = "answer[" + r + "]";
-            string z = "curr[" + r + "]";
 
-            <div>
-                <p><b> &quot;@item.Task&quot;</b></p>
-                <p>
-                    <input type="radio" name=@d value="a1">@mas[0]<Br>
-                    <input type="radio" name=@d value="a2">@mas[1]<Br>
-                    <input type="radio" name=@d value="a3">@mas[2]<Br>
-                    <input type="radio" name=@d value="a4">@mas[3]<Br>
-                    <input type="hidden" name=@z value=@current>
-                </p>
-            </div>
-            r++;
+
+                string d = "answer[" + r + "]";
+                string z = "curr[" + r + "]";
+
+                <div>
+                    <p><b> &quot;@item.Task&quot;</b></p>
+                    <p>
+                        <input type="radio" name=@d value="a1">@mas[0]<Br>
+                        <input type="radio" name=@d value="a2">@mas[1]<Br>
+                        <input type="radio" name=@d value="a3">@mas[2]<Br>
+                        <input type="radio" name=@d value="a4">@mas[3]<Br>
+                        <input type="hidden" name=@z value=@current>
+                    </p>
+                </div>
+                r++;
+            }
+            <input type="hidden" name="TestId" value=@Model.Id>
+            <input class="btn btn-success" type="submit" value="Send" />
         }
-        <input type="hidden" name="TestId" value=@Model.Id>
-        <input class="input-style" type="submit" value="Отправить" />
-    }
-
+    </div>
 
 </body>
 

@@ -5,28 +5,39 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 <body>
-    <link rel="stylesheet" href="~/Content/CourseInfo.css">
-    <link rel="stylesheet" href="~/Content/TextBox.css">
-    <br />
-    <p>Редактирование урока @ViewBag.OneLesson.Name</p>
-    <a href="/Lesson/ViewLessonAbout?id_lesson=@ViewBag.OneLesson.Id">
-        Назад к уроку
-    </a>
-    @using (Html.BeginForm("Update", "Lesson", FormMethod.Post))
-    {
-        <input type="hidden" name="Id" value="@ViewBag.OneLesson.Id" />
-        <input type="text" name="Name" class="input-style" value="@ViewBag.OneLesson.Name" /><br />
+    <div class="container">
+        <div class="row-fluid">
+            <div class="head_text">
+                <h1>@ViewBag.OneLesson.Name</h1>
+                <a class="btn btn-primary" href="/Lesson/ViewLessonAbout?id_lesson=@ViewBag.OneLesson.Id">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <b>Back to Lesson</b>
+                </a>
+            </div>
+            <div class="list_lesson">
+                @using (Html.BeginForm("Update", "Lesson", FormMethod.Post))
+                {
+                    <h2>Edit name</h2>
+                    <input type="hidden" name="Id" value="@ViewBag.OneLesson.Id" />
+                    <input type="text" name="Name" class="input-style" value="@ViewBag.OneLesson.Name" /><br />
         <!--<input type="text" name="Information" value="@ViewBag.OneLesson.Information" />-->
-        <textarea name="Information" class="input-style" cols="60" style="width: 100%; height: 400px;">@ViewBag.OneLesson.Information</textarea><br />
-        <input class="input-style" type="submit" value="Сохранить изменения" />
+                    <h2>Edit information</h2>
+                    <textarea name="Information" class="input-style" cols="60" style="width: 600px; height: 400px;">@ViewBag.OneLesson.Information</textarea><br />
+                    <strong><input class="btn btn-success" type="submit" value="Save Changes" /></strong>
 
-    }
+                }
+            </div>
+        </div>
+    </div>
     <!--test-->
     <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
     <script type="text/javascript">
-            bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+                    bkLib.onDomLoaded(function () { nicEditors.allTextAreas() });
     </script>
 </body>
 </html>

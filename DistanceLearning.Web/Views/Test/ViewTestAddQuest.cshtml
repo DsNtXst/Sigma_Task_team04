@@ -3,50 +3,56 @@
     ViewBag.Title = "ViewTestAddQuest";
 }
 
-<h2>ViewTestAddQuest</h2>
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/CourseInfo.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 <body>
-    <link rel="stylesheet" href="~/Content/CourseInfo.css">
-    <link rel="stylesheet" href="~/Content/TextBox.css">
-    <br />
-    <p>Добавление вопроса в тест №@ViewBag.Id</p>
-    <a href="/Courses/Course/@ViewBag.Id_test">
-        Назад к курсу
-    </a>
-
-    @using (Html.BeginForm("AddQues", "Test", FormMethod.Post))
-    {
-        <input type="hidden" name="TestId" value="@ViewBag.Id_test" />
-        <fieldset>
-            <p>
-                Введите вопрос<br />
-                <input class="input-style" type="text" name="Task" /><br />
-            </p>
-            <!--<input type="text" name="Information" />-->
-            <p>
-                Введите правильный ответ<br />
-                <input class="input-style" type="text" name="TrueAnswer" /><br />
-            </p>
-            <p>
-                Введите неверный ответ<br />
-                <input class="input-style" type="text" name="WrongAnswer1" /><br />
-            </p>
-            <p>
-                Введите неверный ответ<br />
-                <input class="input-style" type="text" name="WrongAnswer2" /><br />
-            </p>
-            <p>
-                Введите неверный ответ<br />
-                <input class="input-style" type="text" name="WrongAnswer3" /><br />
-            </p>
-            <input class="input-style" type="submit" value="Добавить" />
-        </fieldset>
-    }
+    <div class="container">
+        <div class="row-fluid">
+            <div class="head_text">
+                <h1>Добавление вопроса в тест №@ViewBag.Id</h1>
+                <a class="btn btn-primary" href="/Courses/Course/@ViewBag.Id_test">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <b>Back to Course</b>
+                </a>
+            </div>
+            <div class="list_test">
+                @using (Html.BeginForm("AddQues", "Test", FormMethod.Post))
+            {
+                    <input type="hidden" name="TestId" value="@ViewBag.Id_test" />
+                    <fieldset>
+                        <p>
+                            Enter question<br />
+                            <input class="input-style" type="text" name="Task" /><br />
+                        </p>
+                        <!--<input type="text" name="Information" />-->
+                        <p>
+                            Enter the correct answer<br />
+                            <input class="input-style" type="text" name="TrueAnswer" /><br />
+                        </p>
+                        <p>
+                            Please enter an incorrect answer<br />
+                            <input class="input-style" type="text" name="WrongAnswer1" /><br />
+                        </p>
+                        <p>
+                            Please enter an incorrect answer<br />
+                            <input class="input-style" type="text" name="WrongAnswer2" /><br />
+                        </p>
+                        <p>
+                            Please enter an incorrect answer<br />
+                            <input class="input-style" type="text" name="WrongAnswer3" /><br />
+                        </p>
+                        <input class="btn btn-success" type="submit" value="Add" />
+                    </fieldset>
+                }
+            </div>
+        </div>
+    </div>
     <!--test-->
 
 </body>
