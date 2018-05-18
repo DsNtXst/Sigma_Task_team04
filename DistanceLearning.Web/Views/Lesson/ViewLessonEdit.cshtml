@@ -13,25 +13,28 @@
     <div class="container">
         <div class="row-fluid">
             <div class="head_text">
-                <h1>@ViewBag.OneLesson.Name</h1>
+                <p style="font-size:35px;">
+                    @ViewBag.OneLesson.Name</p>
                 <a class="btn btn-primary" href="/Lesson/ViewLessonAbout?id_lesson=@ViewBag.OneLesson.Id">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <b>Back to Lesson</b>
                 </a>
-            </div>
+</div>
             <div class="list_lesson">
-                @using (Html.BeginForm("Update", "Lesson", FormMethod.Post))
-                {
-                    <h2>Edit name</h2>
-                    <input type="hidden" name="Id" value="@ViewBag.OneLesson.Id" />
-                    <input type="text" name="Name" class="input-style" value="@ViewBag.OneLesson.Name" /><br />
+                                @using (Html.BeginForm("Update", "Lesson", FormMethod.Post))
+                                {
+                                    <p style="font-size:25px;">
+                                        Edit name</p>
+                                        <input type="hidden" name="Id" value="@ViewBag.OneLesson.Id" />
+                                        <input type="text" name="Name" class="input-style" value="@ViewBag.OneLesson.Name" /><br />
         <!--<input type="text" name="Information" value="@ViewBag.OneLesson.Information" />-->
-                    <h2>Edit information</h2>
-                    <textarea name="Information" class="input-style" cols="60" style="width: 600px; height: 400px;">@ViewBag.OneLesson.Information</textarea><br />
-                    <strong><input class="btn btn-success" type="submit" value="Save Changes" /></strong>
+                                    <p style="font-size:25px;">
+                                        Edit information</p>
+                                        <textarea name="Information" class="input-style" cols="60" style="width: 600px; height: 400px;">@ViewBag.OneLesson.Information</textarea><br />
+                                        <strong><input class="btn btn-success" type="submit" value="Save Changes" /></strong>
 
-                }
-            </div>
+                                }
+</div>
         </div>
     </div>
     <!--test-->

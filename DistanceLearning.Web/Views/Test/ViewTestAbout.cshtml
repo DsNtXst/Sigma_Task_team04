@@ -15,16 +15,17 @@
     <div class="container">
         <div class="row-fluid">
             <div class="head_text">
-                <h1>@Html.DisplayFor(model => model.Name)</h1>
+                <p style="font-size:35px;">
+                    @Html.DisplayFor(model => model.Name)</p>
                 <a class="btn btn-primary" href="/Courses/Course/@Model.CourseId">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <b>Back to Course</b>
                 </a>
 
                 <!--TEST-->
-                <p><h3>Number of questions</h3></p>
+                <p style="font-size:25px;">Number of questions</p>
                 <h7>@ViewData["ques"]</h7>
-                <p><h3>Time to perform</h3></p>
+                <p style="font-size:25px;">Time to perform</p>
                 <p>@Html.DisplayFor(model => model.Time)</p>
             </div>
             <div class="list_test">

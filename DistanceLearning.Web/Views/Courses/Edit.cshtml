@@ -14,12 +14,13 @@
     <div class="container">
         <div class="row-fluid">
             <div class="head_page">
-                <h1>Editing a course</h1>
-                @using (Html.BeginForm("Edit", "Courses", FormMethod.Post))
-                {
-                    <input type="hidden" name="Id" value="@Model.Id" />
-                    <input type="hidden" name="LectorEmail" value="@Model.LectorEmail" />
-                    <p style="margin-left:28px;">Course name&ensp;@Html.EditorFor(Model => Model.Name, new { htmlAttributes = new { @class = "input-style" } })</p>
+                <p style="font-size:35px;">
+                    Editing a course</p>
+                    @using (Html.BeginForm("Edit", "Courses", FormMethod.Post))
+                    {
+                        <input type="hidden" name="Id" value="@Model.Id" />
+                        <input type="hidden" name="LectorEmail" value="@Model.LectorEmail" />
+<p style="margin-left:28px;">Course name&ensp;@Html.EditorFor(Model => Model.Name, new { htmlAttributes = new { @class = "input-style" } })</p>
                     <p>Number of hours&ensp;@Html.EditorFor(Model => Model.Hours, new { htmlAttributes = new { @class = "input-style" } })</p>
                     <input class="btn btn-success" type="submit" value="Save" />
                 }

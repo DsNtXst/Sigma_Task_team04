@@ -73,6 +73,7 @@
 
 
                     @Html.DisplayFor(modelItem => item.Name)
+                    <br />
                     <!--(*-*)-->
                     <!--
                     <h7>[Html.RouteLink("Подробнее", new { controller = "Lesson", action = "ViewLessonAbout", Id = item.Id })
@@ -87,6 +88,7 @@
                         {
                             <input type="hidden" name="id_lesson" value="@item.Id" />
                             <input class="btn btn-danger" type="submit" value="Delete" />
+                            <br />
                         }
                     }
                 }
@@ -105,10 +107,12 @@
                                 <a class="btn btn-primary" href="/Test/ViewTestAbout?id_test=@item.Id">
                                     Learn More
                                 </a>
+                                <br />
                                 using (Html.BeginForm("Delete", "Test", FormMethod.Post))
                                 {
                                     <input type="hidden" name="id_test" value="@item.Id" />
                                     <input class="btn btn-danger" type="submit" value="Delete" />
+                                    <br/>
                                 }
                             }
                             if (this.User.IsInRole("user") && ViewBag.IsSubcribe)

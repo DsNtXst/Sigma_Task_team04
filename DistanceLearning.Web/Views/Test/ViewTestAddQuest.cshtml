@@ -15,12 +15,13 @@
     <div class="container">
         <div class="row-fluid">
             <div class="head_text">
-                <h1>Adding a question to the test @ViewBag.Id</h1>
-                <a class="btn btn-primary" href="/Courses/Course/@ViewBag.Id_test">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <b>Back to Course</b>
-                </a>
-            </div>
+                <p style="font-size:35px;">
+                    Adding a question to the test @ViewBag.Id</p>
+                    <a class="btn btn-primary" href="/Courses/Course/@ViewBag.Id_test">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <b>Back to Course</b>
+                    </a>
+</div>
             <div class="list_test">
                 @using (Html.BeginForm("AddQues", "Test", FormMethod.Post))
             {

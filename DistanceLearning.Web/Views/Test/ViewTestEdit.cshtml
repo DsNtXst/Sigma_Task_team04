@@ -14,12 +14,13 @@
     <div class="container">
         <div class="row-fluid">
             <div class="head_text">
-                <h1> @ViewBag.OneTest.Name</h1>
-                <a class="btn btn-primary" href="/Test/ViewTestAbout?id_test=@ViewBag.OneTest.Id">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <b>Back to Test</b>
-                </a>
-            </div>
+                <p style="font-size:35px;">
+                    @ViewBag.OneTest.Name</p>
+                    <a class="btn btn-primary" href="/Test/ViewTestAbout?id_test=@ViewBag.OneTest.Id">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <b>Back to Test</b>
+                    </a>
+</div>
             <div class="list_test">
                 @using (Html.BeginForm("Update", "Test", FormMethod.Post))
                 {
